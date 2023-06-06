@@ -1,0 +1,510 @@
+/home/pw/projects/thesis/code/nipype_glm
+Running job on: turing
+Wed 24 Aug 2022 07:35:31 PM PDT
+Running level 1 nipype script
+Some packages in this Docker container are non-free
+If you are considering commercial use of this container, please consult the relevant license:
+https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Licence
+Running code as:  pw
+[Errno 17] File exists: '/home/pw/projects/thesis/out/'
+Running data from /home/pw/projects/thesis/data/
+220825-02:36:46,435 nipype.workflow INFO:
+	 Generated workflow graph: /home/pw/projects/thesis/out/workflow/modelfit_final_detailed.png (graph2use=exec, simple_form=False).
+220825-02:36:47,650 nipype.workflow INFO:
+	 Workflow workflow settings: ['check', 'execution', 'logging', 'monitoring']
+220825-02:36:48,39 nipype.workflow INFO:
+	 Running serially.
+220825-02:36:48,42 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/dg".
+220825-02:36:48,58 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-02:36:48,73 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-02:36:48,73 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/apply_mask".
+220825-02:36:48,90 nipype.workflow INFO:
+	 [Node] "workflow.apply_mask" found cached.
+220825-02:36:48,90 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/smooth".
+220825-02:36:48,95 nipype.workflow INFO:
+	 [Node] "workflow.smooth" found cached.
+220825-02:36:48,96 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.seedmask" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/seedmask".
+220825-02:36:48,100 nipype.workflow INFO:
+	 [Node] "workflow.seedmask" found cached.
+220825-02:36:48,100 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_ACC/get_predictors".
+220825-02:36:48,241 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-02:36:48,241 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_ACC/get_subjinfo".
+220825-02:36:48,420 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-02:36:48,421 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_ACC/modelspec".
+220825-02:36:48,474 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-02:36:48,474 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_ACC/level1design".
+220825-02:36:48,615 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-02:36:48,615 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_ACC/modelgen".
+220825-02:36:48,635 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-02:36:48,635 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_ACC/level1estimate".
+220825-02:36:48,643 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-02:36:48,643 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_MFG/get_predictors".
+220825-02:36:48,652 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-02:36:48,652 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_MFG/get_subjinfo".
+220825-02:36:48,830 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-02:36:48,831 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_MFG/modelspec".
+220825-02:36:48,883 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-02:36:48,884 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_MFG/level1design".
+220825-02:36:49,24 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-02:36:49,24 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_MFG/modelgen".
+220825-02:36:49,44 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-02:36:49,44 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_MFG/level1estimate".
+220825-02:36:49,52 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-02:36:49,52 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Cere/get_predictors".
+220825-02:36:49,60 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-02:36:49,60 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Cere/get_subjinfo".
+220825-02:36:49,238 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-02:36:49,238 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Cere/modelspec".
+220825-02:36:49,289 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-02:36:49,289 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Cere/level1design".
+220825-02:36:49,428 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-02:36:49,428 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Cere/modelgen".
+220825-02:36:49,446 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-02:36:49,446 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Cere/level1estimate".
+220825-02:36:49,454 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-02:36:49,454 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGm/get_predictors".
+220825-02:36:49,462 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-02:36:49,462 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGm/get_subjinfo".
+220825-02:36:49,640 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-02:36:49,641 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGm/modelspec".
+220825-02:36:49,737 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-02:36:49,737 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGm/level1design".
+220825-02:36:49,877 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-02:36:49,877 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGm/modelgen".
+220825-02:36:49,895 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-02:36:49,895 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGm/level1estimate".
+220825-02:36:49,904 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-02:36:49,904 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGl/get_predictors".
+220825-02:36:49,915 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-02:36:49,915 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGl/get_subjinfo".
+220825-02:36:50,92 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-02:36:50,92 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGl/modelspec".
+220825-02:36:50,143 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-02:36:50,144 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGl/level1design".
+220825-02:36:50,282 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-02:36:50,282 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGl/modelgen".
+220825-02:36:50,302 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-02:36:50,302 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_FFGl/level1estimate".
+220825-02:36:50,311 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-02:36:50,311 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IfGi/get_predictors".
+220825-02:36:50,322 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-02:36:50,323 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IfGi/get_subjinfo".
+220825-02:36:50,503 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-02:36:50,504 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IfGi/modelspec".
+220825-02:36:50,554 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-02:36:50,555 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IfGi/level1design".
+220825-02:36:50,693 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-02:36:50,693 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IfGi/modelgen".
+220825-02:36:50,711 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-02:36:50,711 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IfGi/level1estimate".
+220825-02:36:50,719 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-02:36:50,719 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IFGs/get_predictors".
+220825-02:36:50,727 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-02:36:50,727 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IFGs/get_subjinfo".
+220825-02:36:50,904 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-02:36:50,904 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IFGs/modelspec".
+220825-02:36:50,955 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-02:36:50,956 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IFGs/level1design".
+220825-02:36:51,94 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-02:36:51,94 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IFGs/modelgen".
+220825-02:36:51,113 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-02:36:51,113 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_IFGs/level1estimate".
+220825-02:36:51,120 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-02:36:51,120 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_SFG/get_predictors".
+220825-02:36:51,128 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-02:36:51,128 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_SFG/get_subjinfo".
+220825-02:36:51,307 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-02:36:51,308 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_SFG/modelspec".
+220825-02:36:51,358 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-02:36:51,359 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_SFG/level1design".
+220825-02:36:51,497 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-02:36:51,498 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_SFG/modelgen".
+220825-02:36:51,516 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-02:36:51,516 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_SFG/level1estimate".
+220825-02:36:51,523 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-02:36:51,523 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Thal/get_predictors".
+220825-02:36:51,534 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-02:36:51,534 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Thal/get_subjinfo".
+220825-02:36:51,716 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-02:36:51,717 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Thal/modelspec".
+220825-02:36:51,767 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-02:36:51,768 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Thal/level1design".
+220825-02:36:51,907 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-02:36:51,907 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Thal/modelgen".
+220825-02:36:51,925 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-02:36:51,926 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_026/_roi_Thal/level1estimate".
+220825-02:36:51,933 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-02:36:51,933 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_025/dg".
+220825-02:36:51,946 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-02:36:51,958 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-02:36:51,958 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_025/apply_mask".
+220825-02:36:51,962 nipype.workflow INFO:
+	 [Node] "workflow.apply_mask" found cached.
+220825-02:36:51,962 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth".
+220825-02:36:51,974 nipype.workflow INFO:
+	 [Node] Setting-up "_smooth0" in "/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth0".
+220825-02:36:51,985 nipype.workflow INFO:
+	 [Node] Running "_smooth0" ("nipype.interfaces.fsl.preprocess.SUSAN"), a CommandLine Interface with command:
+susan /home/pw/projects/thesis/out/workflow/_subject_id_025/apply_mask/mapflow/_apply_mask0/sub-025_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked.nii.gz 2000.0000000000 4.2466090014 3 1 0 /home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth0/sub-025_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz
+220825-02:48:13,299 nipype.workflow INFO:
+	 [Node] Setting-up "_smooth1" in "/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth1".
+220825-02:48:13,312 nipype.workflow INFO:
+	 [Node] Running "_smooth1" ("nipype.interfaces.fsl.preprocess.SUSAN"), a CommandLine Interface with command:
+susan /home/pw/projects/thesis/out/workflow/_subject_id_025/apply_mask/mapflow/_apply_mask1/sub-025_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked.nii.gz 2000.0000000000 4.2466090014 3 1 0 /home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth1/sub-025_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz
+220825-02:59:37,267 nipype.workflow INFO:
+	 [Node] Setting-up "_smooth2" in "/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth2".
+220825-02:59:37,280 nipype.workflow INFO:
+	 [Node] Running "_smooth2" ("nipype.interfaces.fsl.preprocess.SUSAN"), a CommandLine Interface with command:
+susan /home/pw/projects/thesis/out/workflow/_subject_id_025/apply_mask/mapflow/_apply_mask2/sub-025_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked.nii.gz 2000.0000000000 4.2466090014 3 1 0 /home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth2/sub-025_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz
+220825-03:10:56,877 nipype.workflow WARNING:
+	 Storing result file without outputs
+220825-03:10:56,878 nipype.workflow WARNING:
+	 [Node] Error on "workflow.smooth" (/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth)
+220825-03:10:56,879 nipype.workflow WARNING:
+	 Interface finished unexpectedly and the corresponding unfinished hashfile /home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/_0x34933384210052b633714cbedcb2880f_unfinished.json does not exist. Another nipype instance may be running against the same work directory. Please ensure no other concurrent workflows are racing
+220825-03:10:56,880 nipype.workflow ERROR:
+	 Node smooth.b5 failed to run on host 5dadc40d0754.
+220825-03:10:56,881 nipype.workflow ERROR:
+	 Saving crash info to /crash-20220825-031056-pw-smooth.b5-2f6df8d3-1db1-4774-8702-dbd7309acdba.txt
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 45, in run
+    node.run(updatehash=updatehash)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1385, in _run_interface
+    self.config["execution"]["stop_on_first_crash"]
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1294, in _collate_results
+    "Subnodes of node: %s failed:\n%s" % (self.name, "\n".join(msg))
+Exception: Subnodes of node: smooth failed:
+Subnode 0 failed
+Error: Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 566, in move
+    os.rename(src, real_dst)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth0/_0x3e7c965bf8f99b24850aadb0876ee9a9_unfinished.json' -> '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth0/_0x3e7c965bf8f99b24850aadb0876ee9a9.json'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 94, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 531, in run
+    shutil.move(hashfile_unfinished, hashfile_unfinished.replace("_unfinished", ""))
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 580, in move
+    copy_function(src, real_dst)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 266, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth0/_0x3e7c965bf8f99b24850aadb0876ee9a9_unfinished.json'
+
+Subnode 1 failed
+Error: Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 566, in move
+    os.rename(src, real_dst)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth1/_0xd1096555eca78a34cb7386368aaa182c_unfinished.json' -> '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth1/_0xd1096555eca78a34cb7386368aaa182c.json'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 94, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 531, in run
+    shutil.move(hashfile_unfinished, hashfile_unfinished.replace("_unfinished", ""))
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 580, in move
+    copy_function(src, real_dst)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 266, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth1/_0xd1096555eca78a34cb7386368aaa182c_unfinished.json'
+
+Subnode 2 failed
+Error: Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 566, in move
+    os.rename(src, real_dst)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth2/_0xb7dfd815d4243ea07dd1553492dd52c6_unfinished.json' -> '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth2/_0xb7dfd815d4243ea07dd1553492dd52c6.json'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 94, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 531, in run
+    shutil.move(hashfile_unfinished, hashfile_unfinished.replace("_unfinished", ""))
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 580, in move
+    copy_function(src, real_dst)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 266, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth2/_0xb7dfd815d4243ea07dd1553492dd52c6_unfinished.json'
+
+
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 45, in run
+    node.run(updatehash=updatehash)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1385, in _run_interface
+    self.config["execution"]["stop_on_first_crash"]
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1294, in _collate_results
+    "Subnodes of node: %s failed:\n%s" % (self.name, "\n".join(msg))
+Exception: Subnodes of node: smooth failed:
+Subnode 0 failed
+Error: Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 566, in move
+    os.rename(src, real_dst)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth0/_0x3e7c965bf8f99b24850aadb0876ee9a9_unfinished.json' -> '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth0/_0x3e7c965bf8f99b24850aadb0876ee9a9.json'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 94, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 531, in run
+    shutil.move(hashfile_unfinished, hashfile_unfinished.replace("_unfinished", ""))
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 580, in move
+    copy_function(src, real_dst)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 266, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth0/_0x3e7c965bf8f99b24850aadb0876ee9a9_unfinished.json'
+
+Subnode 1 failed
+Error: Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 566, in move
+    os.rename(src, real_dst)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth1/_0xd1096555eca78a34cb7386368aaa182c_unfinished.json' -> '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth1/_0xd1096555eca78a34cb7386368aaa182c.json'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 94, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 531, in run
+    shutil.move(hashfile_unfinished, hashfile_unfinished.replace("_unfinished", ""))
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 580, in move
+    copy_function(src, real_dst)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 266, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth1/_0xd1096555eca78a34cb7386368aaa182c_unfinished.json'
+
+Subnode 2 failed
+Error: Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 566, in move
+    os.rename(src, real_dst)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth2/_0xb7dfd815d4243ea07dd1553492dd52c6_unfinished.json' -> '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth2/_0xb7dfd815d4243ea07dd1553492dd52c6.json'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 94, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 531, in run
+    shutil.move(hashfile_unfinished, hashfile_unfinished.replace("_unfinished", ""))
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 580, in move
+    copy_function(src, real_dst)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 266, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_025/smooth/mapflow/_smooth2/_0xb7dfd815d4243ea07dd1553492dd52c6_unfinished.json'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pw/projects/thesis/code/nipype_glm/firstlevel15-21.py", line 516, in <module>
+    wf.run() #plugin="MultiProc", plugin_args={"n_procs": 8}
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/workflows.py", line 638, in run
+    runner.run(execgraph, updatehash=updatehash, config=self.config)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 50, in run
+    crashfile = report_crash(node)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/plugins/tools.py", line 72, in report_crash
+    crash2txt(crashfile, dict(node=node, traceback=traceback))
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 676, in crash2txt
+    with open(filename, "w") as fp:
+PermissionError: [Errno 13] Permission denied: '/crash-20220825-031056-pw-smooth.b5-2f6df8d3-1db1-4774-8702-dbd7309acdba.txt'
+Wed 24 Aug 2022 08:10:57 PM PDT

@@ -1,0 +1,2887 @@
+/home/pw/projects/thesis/code/nipype_glm
+Running job on: wood
+Thu 25 Aug 2022 10:33:10 AM PDT
+Running level 1 nipype script
+Some packages in this Docker container are non-free
+If you are considering commercial use of this container, please consult the relevant license:
+https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Licence
+[22;0t]0;IPython: /Running code as:  pw
+[Errno 17] File exists: '/home/pw/projects/thesis/out/'
+Running data from /home/pw/projects/thesis/data/
+220825-17:34:20,252 nipype.workflow INFO:
+	 Generated workflow graph: /home/pw/projects/thesis/out/workflow/modelfit_final_detailed.png (graph2use=exec, simple_form=False).
+220825-17:34:20,277 nipype.workflow INFO:
+	 Workflow workflow settings: ['check', 'execution', 'logging', 'monitoring']
+220825-17:34:20,517 nipype.workflow INFO:
+	 Running serially.
+220825-17:34:20,518 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/dg".
+220825-17:34:20,529 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-17:34:20,542 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-17:34:20,542 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/apply_mask".
+220825-17:34:20,568 nipype.workflow INFO:
+	 [Node] "workflow.apply_mask" found cached.
+220825-17:34:20,568 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/smooth".
+220825-17:34:20,574 nipype.workflow INFO:
+	 [Node] "workflow.smooth" found cached.
+220825-17:34:20,574 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.seedmask" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/seedmask".
+220825-17:34:20,578 nipype.workflow INFO:
+	 [Node] "workflow.seedmask" found cached.
+220825-17:34:20,578 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_ACC/get_predictors".
+220825-17:34:20,923 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:20,923 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_ACC/get_subjinfo".
+220825-17:34:21,42 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:21,42 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_ACC/modelspec".
+220825-17:34:21,87 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:21,87 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_ACC/level1design".
+220825-17:34:21,203 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:21,203 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_ACC/modelgen".
+220825-17:34:21,237 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:21,237 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_ACC/level1estimate".
+220825-17:34:21,257 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:21,258 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_MFG/get_predictors".
+220825-17:34:21,285 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:21,285 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_MFG/get_subjinfo".
+220825-17:34:21,409 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:21,410 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_MFG/modelspec".
+220825-17:34:21,453 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:21,454 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_MFG/level1design".
+220825-17:34:21,539 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:21,539 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_MFG/modelgen".
+220825-17:34:21,574 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:21,575 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_MFG/level1estimate".
+220825-17:34:21,598 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:21,598 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Cere/get_predictors".
+220825-17:34:21,620 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:21,621 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Cere/get_subjinfo".
+220825-17:34:21,741 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:21,741 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Cere/modelspec".
+220825-17:34:21,786 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:21,786 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Cere/level1design".
+220825-17:34:21,866 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:21,867 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Cere/modelgen".
+220825-17:34:21,899 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:21,899 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Cere/level1estimate".
+220825-17:34:21,921 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:21,922 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGm/get_predictors".
+220825-17:34:21,944 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:21,944 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGm/get_subjinfo".
+220825-17:34:22,65 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:22,65 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGm/modelspec".
+220825-17:34:22,108 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:22,109 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGm/level1design".
+220825-17:34:22,194 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:22,195 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGm/modelgen".
+220825-17:34:22,225 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:22,226 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGm/level1estimate".
+220825-17:34:22,245 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:22,245 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGl/get_predictors".
+220825-17:34:22,267 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:22,267 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGl/get_subjinfo".
+220825-17:34:22,389 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:22,389 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGl/modelspec".
+220825-17:34:22,436 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:22,437 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGl/level1design".
+220825-17:34:22,503 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:22,503 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGl/modelgen".
+220825-17:34:22,532 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:22,532 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_FFGl/level1estimate".
+220825-17:34:22,560 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:22,560 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IfGi/get_predictors".
+220825-17:34:22,581 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:22,582 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IfGi/get_subjinfo".
+220825-17:34:22,704 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:22,704 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IfGi/modelspec".
+220825-17:34:22,753 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:22,753 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IfGi/level1design".
+220825-17:34:22,840 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:22,841 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IfGi/modelgen".
+220825-17:34:22,871 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:22,871 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IfGi/level1estimate".
+220825-17:34:22,886 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:22,886 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IFGs/get_predictors".
+220825-17:34:22,913 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:22,914 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IFGs/get_subjinfo".
+220825-17:34:23,32 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:23,32 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IFGs/modelspec".
+220825-17:34:23,79 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:23,79 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IFGs/level1design".
+220825-17:34:23,158 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:23,159 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IFGs/modelgen".
+220825-17:34:23,189 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:23,189 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_IFGs/level1estimate".
+220825-17:34:23,212 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:23,213 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_SFG/get_predictors".
+220825-17:34:23,238 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:23,239 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_SFG/get_subjinfo".
+220825-17:34:23,360 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:23,360 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_SFG/modelspec".
+220825-17:34:23,407 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:23,407 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_SFG/level1design".
+220825-17:34:23,479 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:23,479 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_SFG/modelgen".
+220825-17:34:23,512 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:23,512 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_SFG/level1estimate".
+220825-17:34:23,526 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:23,526 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Thal/get_predictors".
+220825-17:34:23,535 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:23,535 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Thal/get_subjinfo".
+220825-17:34:23,647 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:23,647 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Thal/modelspec".
+220825-17:34:23,697 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:23,697 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Thal/level1design".
+220825-17:34:23,790 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:23,791 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Thal/modelgen".
+220825-17:34:23,803 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:23,803 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_019/_roi_Thal/level1estimate".
+220825-17:34:23,826 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:23,826 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/dg".
+220825-17:34:23,862 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-17:34:23,873 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-17:34:23,873 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/apply_mask".
+220825-17:34:23,895 nipype.workflow INFO:
+	 [Node] "workflow.apply_mask" found cached.
+220825-17:34:23,895 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/smooth".
+220825-17:34:23,900 nipype.workflow INFO:
+	 [Node] "workflow.smooth" found cached.
+220825-17:34:23,901 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.seedmask" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/seedmask".
+220825-17:34:23,904 nipype.workflow INFO:
+	 [Node] "workflow.seedmask" found cached.
+220825-17:34:23,905 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_ACC/get_predictors".
+220825-17:34:23,936 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:23,936 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_ACC/get_subjinfo".
+220825-17:34:24,57 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:24,57 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_ACC/modelspec".
+220825-17:34:24,104 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:24,104 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_ACC/level1design".
+220825-17:34:24,194 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:24,195 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_ACC/modelgen".
+220825-17:34:24,225 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:24,225 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_ACC/level1estimate".
+220825-17:34:24,254 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:24,254 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_MFG/get_predictors".
+220825-17:34:24,277 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:24,278 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_MFG/get_subjinfo".
+220825-17:34:24,395 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:24,395 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_MFG/modelspec".
+220825-17:34:24,432 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:24,433 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_MFG/level1design".
+220825-17:34:24,521 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:24,522 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_MFG/modelgen".
+220825-17:34:24,550 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:24,550 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_MFG/level1estimate".
+220825-17:34:24,574 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:24,574 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Cere/get_predictors".
+220825-17:34:24,608 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:24,608 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Cere/get_subjinfo".
+220825-17:34:24,728 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:24,728 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Cere/modelspec".
+220825-17:34:24,770 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:24,770 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Cere/level1design".
+220825-17:34:24,847 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:24,847 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Cere/modelgen".
+220825-17:34:24,876 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:24,876 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Cere/level1estimate".
+220825-17:34:24,899 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:24,899 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGm/get_predictors".
+220825-17:34:24,924 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:24,925 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGm/get_subjinfo".
+220825-17:34:25,40 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:25,41 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGm/modelspec".
+220825-17:34:25,80 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:25,81 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGm/level1design".
+220825-17:34:25,165 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:25,165 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGm/modelgen".
+220825-17:34:25,201 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:25,202 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGm/level1estimate".
+220825-17:34:25,225 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:25,225 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGl/get_predictors".
+220825-17:34:25,246 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:25,246 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGl/get_subjinfo".
+220825-17:34:25,369 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:25,370 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGl/modelspec".
+220825-17:34:25,412 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:25,412 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGl/level1design".
+220825-17:34:25,492 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:25,492 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGl/modelgen".
+220825-17:34:25,523 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:25,524 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_FFGl/level1estimate".
+220825-17:34:25,540 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:25,540 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IfGi/get_predictors".
+220825-17:34:25,558 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:25,558 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IfGi/get_subjinfo".
+220825-17:34:25,671 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:25,671 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IfGi/modelspec".
+220825-17:34:25,713 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:25,713 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IfGi/level1design".
+220825-17:34:25,799 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:25,799 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IfGi/modelgen".
+220825-17:34:25,830 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:25,831 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IfGi/level1estimate".
+220825-17:34:25,839 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:25,839 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IFGs/get_predictors".
+220825-17:34:25,865 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:25,865 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IFGs/get_subjinfo".
+220825-17:34:25,968 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:25,968 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IFGs/modelspec".
+220825-17:34:26,10 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:26,10 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IFGs/level1design".
+220825-17:34:26,87 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:26,87 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IFGs/modelgen".
+220825-17:34:26,109 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:26,109 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_IFGs/level1estimate".
+220825-17:34:26,137 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:26,137 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_SFG/get_predictors".
+220825-17:34:26,154 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:26,154 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_SFG/get_subjinfo".
+220825-17:34:26,265 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:26,265 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_SFG/modelspec".
+220825-17:34:26,311 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:26,311 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_SFG/level1design".
+220825-17:34:26,378 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:26,378 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_SFG/modelgen".
+220825-17:34:26,403 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:26,403 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_SFG/level1estimate".
+220825-17:34:26,428 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:26,429 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Thal/get_predictors".
+220825-17:34:26,455 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:26,455 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Thal/get_subjinfo".
+220825-17:34:26,566 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:26,566 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Thal/modelspec".
+220825-17:34:26,611 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:26,611 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Thal/level1design".
+220825-17:34:26,694 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:26,695 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Thal/modelgen".
+220825-17:34:26,721 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:26,721 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_018/_roi_Thal/level1estimate".
+220825-17:34:26,746 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:26,747 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/dg".
+220825-17:34:26,757 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-17:34:26,768 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-17:34:26,768 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/apply_mask".
+220825-17:34:26,791 nipype.workflow INFO:
+	 [Node] "workflow.apply_mask" found cached.
+220825-17:34:26,791 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/smooth".
+220825-17:34:26,797 nipype.workflow INFO:
+	 [Node] "workflow.smooth" found cached.
+220825-17:34:26,797 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.seedmask" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/seedmask".
+220825-17:34:26,801 nipype.workflow INFO:
+	 [Node] "workflow.seedmask" found cached.
+220825-17:34:26,801 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_ACC/get_predictors".
+220825-17:34:26,822 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:26,822 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_ACC/get_subjinfo".
+220825-17:34:26,934 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:26,934 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_ACC/modelspec".
+220825-17:34:26,983 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:26,983 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_ACC/level1design".
+220825-17:34:27,64 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:27,64 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_ACC/modelgen".
+220825-17:34:27,93 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:27,93 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_ACC/level1estimate".
+220825-17:34:27,121 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:27,121 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_MFG/get_predictors".
+220825-17:34:27,151 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:27,152 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_MFG/get_subjinfo".
+220825-17:34:27,270 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:27,270 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_MFG/modelspec".
+220825-17:34:27,311 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:27,312 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_MFG/level1design".
+220825-17:34:27,390 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:27,391 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_MFG/modelgen".
+220825-17:34:27,417 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:27,417 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_MFG/level1estimate".
+220825-17:34:27,433 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:27,433 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Cere/get_predictors".
+220825-17:34:27,455 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:27,455 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Cere/get_subjinfo".
+220825-17:34:27,573 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:27,573 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Cere/modelspec".
+220825-17:34:27,618 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:27,618 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Cere/level1design".
+220825-17:34:27,704 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:27,704 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Cere/modelgen".
+220825-17:34:27,740 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:27,740 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Cere/level1estimate".
+220825-17:34:27,762 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:27,762 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGm/get_predictors".
+220825-17:34:27,787 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:27,787 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGm/get_subjinfo".
+220825-17:34:27,903 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:27,903 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGm/modelspec".
+220825-17:34:27,943 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:27,943 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGm/level1design".
+220825-17:34:28,28 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:28,28 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGm/modelgen".
+220825-17:34:28,56 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:28,56 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGm/level1estimate".
+220825-17:34:28,75 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:28,75 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGl/get_predictors".
+220825-17:34:28,100 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:28,100 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGl/get_subjinfo".
+220825-17:34:28,220 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:28,220 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGl/modelspec".
+220825-17:34:28,264 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:28,265 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGl/level1design".
+220825-17:34:28,346 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:28,347 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGl/modelgen".
+220825-17:34:28,378 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:28,378 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_FFGl/level1estimate".
+220825-17:34:28,405 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:28,405 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IfGi/get_predictors".
+220825-17:34:28,425 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:28,425 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IfGi/get_subjinfo".
+220825-17:34:28,541 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:28,541 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IfGi/modelspec".
+220825-17:34:28,589 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:28,589 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IfGi/level1design".
+220825-17:34:28,675 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:28,676 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IfGi/modelgen".
+220825-17:34:28,702 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:28,702 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IfGi/level1estimate".
+220825-17:34:28,723 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:28,723 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IFGs/get_predictors".
+220825-17:34:28,742 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:28,742 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IFGs/get_subjinfo".
+220825-17:34:28,858 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:28,858 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IFGs/modelspec".
+220825-17:34:28,909 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:28,909 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IFGs/level1design".
+220825-17:34:28,994 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:28,994 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IFGs/modelgen".
+220825-17:34:29,26 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:29,27 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_IFGs/level1estimate".
+220825-17:34:29,52 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:29,52 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_SFG/get_predictors".
+220825-17:34:29,85 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:29,86 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_SFG/get_subjinfo".
+220825-17:34:29,212 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:29,212 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_SFG/modelspec".
+220825-17:34:29,257 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:29,257 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_SFG/level1design".
+220825-17:34:29,331 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:29,331 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_SFG/modelgen".
+220825-17:34:29,357 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:29,358 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_SFG/level1estimate".
+220825-17:34:29,384 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:29,384 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Thal/get_predictors".
+220825-17:34:29,402 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:29,402 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Thal/get_subjinfo".
+220825-17:34:29,524 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:29,524 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Thal/modelspec".
+220825-17:34:29,567 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:29,568 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Thal/level1design".
+220825-17:34:29,651 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:29,651 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Thal/modelgen".
+220825-17:34:29,732 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:29,733 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_017/_roi_Thal/level1estimate".
+220825-17:34:29,747 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:29,747 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/dg".
+220825-17:34:29,757 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-17:34:29,768 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-17:34:29,768 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/apply_mask".
+220825-17:34:29,790 nipype.workflow INFO:
+	 [Node] "workflow.apply_mask" found cached.
+220825-17:34:29,790 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/smooth".
+220825-17:34:29,795 nipype.workflow INFO:
+	 [Node] "workflow.smooth" found cached.
+220825-17:34:29,795 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.seedmask" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/seedmask".
+220825-17:34:29,800 nipype.workflow INFO:
+	 [Node] "workflow.seedmask" found cached.
+220825-17:34:29,800 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_ACC/get_predictors".
+220825-17:34:29,826 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:29,826 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_ACC/get_subjinfo".
+220825-17:34:29,948 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:29,948 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_ACC/modelspec".
+220825-17:34:29,990 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:29,990 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_ACC/level1design".
+220825-17:34:30,73 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:30,73 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_ACC/modelgen".
+220825-17:34:30,105 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:30,105 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_ACC/level1estimate".
+220825-17:34:30,128 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:30,128 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_MFG/get_predictors".
+220825-17:34:30,137 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:30,137 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_MFG/get_subjinfo".
+220825-17:34:30,238 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:30,238 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_MFG/modelspec".
+220825-17:34:30,261 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:30,261 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_MFG/level1design".
+220825-17:34:30,326 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:30,326 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_MFG/modelgen".
+220825-17:34:30,337 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:30,337 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_MFG/level1estimate".
+220825-17:34:30,355 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:30,355 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Cere/get_predictors".
+220825-17:34:30,364 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:30,364 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Cere/get_subjinfo".
+220825-17:34:30,465 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:30,465 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Cere/modelspec".
+220825-17:34:30,488 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:30,489 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Cere/level1design".
+220825-17:34:30,553 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:30,553 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Cere/modelgen".
+220825-17:34:30,565 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:30,565 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Cere/level1estimate".
+220825-17:34:30,581 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:30,581 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGm/get_predictors".
+220825-17:34:30,589 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:30,589 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGm/get_subjinfo".
+220825-17:34:30,693 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:30,693 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGm/modelspec".
+220825-17:34:30,716 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:30,717 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGm/level1design".
+220825-17:34:30,780 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:30,780 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGm/modelgen".
+220825-17:34:30,792 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:30,792 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGm/level1estimate".
+220825-17:34:30,812 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:30,812 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGl/get_predictors".
+220825-17:34:30,821 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:30,821 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGl/get_subjinfo".
+220825-17:34:30,926 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:30,926 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGl/modelspec".
+220825-17:34:30,949 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:30,950 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGl/level1design".
+220825-17:34:31,14 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:31,14 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGl/modelgen".
+220825-17:34:31,26 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:31,26 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_FFGl/level1estimate".
+220825-17:34:31,45 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:31,45 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IfGi/get_predictors".
+220825-17:34:31,53 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:31,54 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IfGi/get_subjinfo".
+220825-17:34:31,160 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:31,160 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IfGi/modelspec".
+220825-17:34:31,183 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:31,183 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IfGi/level1design".
+220825-17:34:31,246 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:31,246 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IfGi/modelgen".
+220825-17:34:31,258 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:31,258 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IfGi/level1estimate".
+220825-17:34:31,284 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:31,285 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IFGs/get_predictors".
+220825-17:34:31,293 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:31,293 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IFGs/get_subjinfo".
+220825-17:34:31,392 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:31,392 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IFGs/modelspec".
+220825-17:34:31,415 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:31,415 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IFGs/level1design".
+220825-17:34:31,478 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:31,478 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IFGs/modelgen".
+220825-17:34:31,490 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:31,490 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_IFGs/level1estimate".
+220825-17:34:31,516 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:31,516 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_SFG/get_predictors".
+220825-17:34:31,524 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:31,525 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_SFG/get_subjinfo".
+220825-17:34:31,626 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:31,626 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_SFG/modelspec".
+220825-17:34:31,649 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:31,649 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_SFG/level1design".
+220825-17:34:31,714 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:31,714 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_SFG/modelgen".
+220825-17:34:31,728 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:31,728 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_SFG/level1estimate".
+220825-17:34:31,750 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:31,750 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Thal/get_predictors".
+220825-17:34:31,759 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:31,759 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Thal/get_subjinfo".
+220825-17:34:31,858 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:31,858 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Thal/modelspec".
+220825-17:34:31,881 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:31,882 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Thal/level1design".
+220825-17:34:31,944 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:31,944 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Thal/modelgen".
+220825-17:34:31,956 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:31,956 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_016/_roi_Thal/level1estimate".
+220825-17:34:31,984 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:31,984 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/dg".
+220825-17:34:31,996 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-17:34:32,21 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-17:34:32,22 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/apply_mask".
+220825-17:34:32,26 nipype.workflow INFO:
+	 [Node] "workflow.apply_mask" found cached.
+220825-17:34:32,27 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/smooth".
+220825-17:34:32,32 nipype.workflow INFO:
+	 [Node] "workflow.smooth" found cached.
+220825-17:34:32,32 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.seedmask" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/seedmask".
+220825-17:34:32,35 nipype.workflow INFO:
+	 [Node] "workflow.seedmask" found cached.
+220825-17:34:32,36 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_ACC/get_predictors".
+220825-17:34:32,41 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:32,41 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_ACC/get_subjinfo".
+220825-17:34:32,140 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:32,140 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_ACC/modelspec".
+220825-17:34:32,163 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:32,163 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_ACC/level1design".
+220825-17:34:32,226 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:32,226 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_ACC/modelgen".
+220825-17:34:32,237 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:32,237 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_ACC/level1estimate".
+220825-17:34:32,242 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:32,242 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_MFG/get_predictors".
+220825-17:34:32,247 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:32,247 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_MFG/get_subjinfo".
+220825-17:34:32,345 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:32,345 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_MFG/modelspec".
+220825-17:34:32,368 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:32,369 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_MFG/level1design".
+220825-17:34:32,431 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:32,431 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_MFG/modelgen".
+220825-17:34:32,444 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:32,444 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_MFG/level1estimate".
+220825-17:34:32,450 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:32,450 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Cere/get_predictors".
+220825-17:34:32,456 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:32,456 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Cere/get_subjinfo".
+220825-17:34:32,554 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:32,554 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Cere/modelspec".
+220825-17:34:32,582 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:32,583 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Cere/level1design".
+220825-17:34:32,644 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:32,644 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Cere/modelgen".
+220825-17:34:32,656 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:32,656 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Cere/level1estimate".
+220825-17:34:32,661 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:32,661 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGm/get_predictors".
+220825-17:34:32,666 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:32,666 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGm/get_subjinfo".
+220825-17:34:32,764 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:32,764 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGm/modelspec".
+220825-17:34:32,786 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:32,787 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGm/level1design".
+220825-17:34:32,849 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:32,849 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGm/modelgen".
+220825-17:34:32,860 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:32,860 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGm/level1estimate".
+220825-17:34:32,865 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:32,865 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGl/get_predictors".
+220825-17:34:32,870 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:32,870 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGl/get_subjinfo".
+220825-17:34:32,972 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:32,972 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGl/modelspec".
+220825-17:34:32,996 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:32,996 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGl/level1design".
+220825-17:34:33,59 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:33,59 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGl/modelgen".
+220825-17:34:33,71 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:33,71 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_FFGl/level1estimate".
+220825-17:34:33,76 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:33,76 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IfGi/get_predictors".
+220825-17:34:33,81 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:33,81 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IfGi/get_subjinfo".
+220825-17:34:33,181 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:33,181 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IfGi/modelspec".
+220825-17:34:33,208 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:33,208 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IfGi/level1design".
+220825-17:34:33,272 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:33,272 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IfGi/modelgen".
+220825-17:34:33,284 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:33,284 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IfGi/level1estimate".
+220825-17:34:33,289 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:33,289 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IFGs/get_predictors".
+220825-17:34:33,294 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:33,294 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IFGs/get_subjinfo".
+220825-17:34:33,395 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:33,395 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IFGs/modelspec".
+220825-17:34:33,419 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:33,419 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IFGs/level1design".
+220825-17:34:33,483 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:33,484 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IFGs/modelgen".
+220825-17:34:33,496 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:33,496 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_IFGs/level1estimate".
+220825-17:34:33,501 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:33,501 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_SFG/get_predictors".
+220825-17:34:33,506 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:33,506 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_SFG/get_subjinfo".
+220825-17:34:33,607 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:33,607 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_SFG/modelspec".
+220825-17:34:33,631 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:33,631 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_SFG/level1design".
+220825-17:34:33,696 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:33,696 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_SFG/modelgen".
+220825-17:34:33,708 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:33,709 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_SFG/level1estimate".
+220825-17:34:33,713 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:33,713 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Thal/get_predictors".
+220825-17:34:33,719 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:33,719 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Thal/get_subjinfo".
+220825-17:34:33,823 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:33,823 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Thal/modelspec".
+220825-17:34:33,847 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:33,847 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Thal/level1design".
+220825-17:34:33,911 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:33,911 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Thal/modelgen".
+220825-17:34:33,923 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:33,924 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_015/_roi_Thal/level1estimate".
+220825-17:34:33,930 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:33,930 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/dg".
+220825-17:34:33,941 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-17:34:33,951 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-17:34:33,951 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/apply_mask".
+220825-17:34:33,955 nipype.workflow INFO:
+	 [Node] "workflow.apply_mask" found cached.
+220825-17:34:33,955 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/smooth".
+220825-17:34:33,960 nipype.workflow INFO:
+	 [Node] "workflow.smooth" found cached.
+220825-17:34:33,960 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.seedmask" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/seedmask".
+220825-17:34:33,963 nipype.workflow INFO:
+	 [Node] "workflow.seedmask" found cached.
+220825-17:34:33,963 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_ACC/get_predictors".
+220825-17:34:33,968 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:33,968 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_ACC/get_subjinfo".
+220825-17:34:34,69 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:34,70 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_ACC/modelspec".
+220825-17:34:34,93 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:34,93 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_ACC/level1design".
+220825-17:34:34,158 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:34,158 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_ACC/modelgen".
+220825-17:34:34,170 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:34,171 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_ACC/level1estimate".
+220825-17:34:34,177 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:34,177 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_MFG/get_predictors".
+220825-17:34:34,183 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:34,183 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_MFG/get_subjinfo".
+220825-17:34:34,284 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:34,285 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_MFG/modelspec".
+220825-17:34:34,308 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:34,308 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_MFG/level1design".
+220825-17:34:34,372 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:34,372 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_MFG/modelgen".
+220825-17:34:34,386 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:34,386 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_MFG/level1estimate".
+220825-17:34:34,392 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:34,392 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Cere/get_predictors".
+220825-17:34:34,397 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:34,397 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Cere/get_subjinfo".
+220825-17:34:34,498 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:34,498 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Cere/modelspec".
+220825-17:34:34,522 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:34,522 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Cere/level1design".
+220825-17:34:34,586 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:34,586 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Cere/modelgen".
+220825-17:34:34,598 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:34,598 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Cere/level1estimate".
+220825-17:34:34,605 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:34,605 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGm/get_predictors".
+220825-17:34:34,612 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:34,612 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGm/get_subjinfo".
+220825-17:34:34,716 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:34,716 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGm/modelspec".
+220825-17:34:34,740 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:34,740 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGm/level1design".
+220825-17:34:34,810 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:34,810 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGm/modelgen".
+220825-17:34:34,822 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:34,823 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGm/level1estimate".
+220825-17:34:34,828 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:34,828 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGl/get_predictors".
+220825-17:34:34,833 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:34,833 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGl/get_subjinfo".
+220825-17:34:34,932 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:34,932 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGl/modelspec".
+220825-17:34:34,955 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:34,955 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGl/level1design".
+220825-17:34:35,18 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:35,18 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGl/modelgen".
+220825-17:34:35,30 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:35,30 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_FFGl/level1estimate".
+220825-17:34:35,35 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:35,35 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IfGi/get_predictors".
+220825-17:34:35,40 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:35,40 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IfGi/get_subjinfo".
+220825-17:34:35,142 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:35,142 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IfGi/modelspec".
+220825-17:34:35,165 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:35,165 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IfGi/level1design".
+220825-17:34:35,228 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:35,228 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IfGi/modelgen".
+220825-17:34:35,242 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:35,242 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IfGi/level1estimate".
+220825-17:34:35,248 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:35,248 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IFGs/get_predictors".
+220825-17:34:35,253 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:35,253 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IFGs/get_subjinfo".
+220825-17:34:35,352 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:35,352 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IFGs/modelspec".
+220825-17:34:35,375 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:35,375 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IFGs/level1design".
+220825-17:34:35,438 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:35,438 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IFGs/modelgen".
+220825-17:34:35,451 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:35,451 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_IFGs/level1estimate".
+220825-17:34:35,456 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:35,456 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_SFG/get_predictors".
+220825-17:34:35,461 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:35,461 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_SFG/get_subjinfo".
+220825-17:34:35,560 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:35,560 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_SFG/modelspec".
+220825-17:34:35,583 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:35,583 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_SFG/level1design".
+220825-17:34:35,646 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:35,646 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_SFG/modelgen".
+220825-17:34:35,658 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:35,659 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_SFG/level1estimate".
+220825-17:34:35,663 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:35,663 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Thal/get_predictors".
+220825-17:34:35,668 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:35,668 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Thal/get_subjinfo".
+220825-17:34:35,768 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:35,768 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Thal/modelspec".
+220825-17:34:35,791 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:35,791 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Thal/level1design".
+220825-17:34:35,854 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:35,854 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Thal/modelgen".
+220825-17:34:35,866 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:35,866 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_014/_roi_Thal/level1estimate".
+220825-17:34:35,871 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:35,871 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/dg".
+220825-17:34:35,881 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-17:34:35,891 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-17:34:35,891 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/apply_mask".
+220825-17:34:35,895 nipype.workflow INFO:
+	 [Node] "workflow.apply_mask" found cached.
+220825-17:34:35,895 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth".
+220825-17:34:35,899 nipype.workflow INFO:
+	 [Node] "workflow.smooth" found cached.
+220825-17:34:35,899 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.seedmask" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/seedmask".
+220825-17:34:35,902 nipype.workflow INFO:
+	 [Node] "workflow.seedmask" found cached.
+220825-17:34:35,902 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_ACC/get_predictors".
+220825-17:34:35,908 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:35,908 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_ACC/get_subjinfo".
+220825-17:34:36,8 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:36,8 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_ACC/modelspec".
+220825-17:34:36,31 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:36,32 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_ACC/level1design".
+220825-17:34:36,94 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:36,94 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_ACC/modelgen".
+220825-17:34:36,105 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:36,106 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_ACC/level1estimate".
+220825-17:34:36,110 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:36,110 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_MFG/get_predictors".
+220825-17:34:36,115 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:36,115 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_MFG/get_subjinfo".
+220825-17:34:36,215 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:36,215 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_MFG/modelspec".
+220825-17:34:36,238 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:36,238 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_MFG/level1design".
+220825-17:34:36,301 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:36,301 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_MFG/modelgen".
+220825-17:34:36,312 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:36,312 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_MFG/level1estimate".
+220825-17:34:36,317 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:36,317 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Cere/get_predictors".
+220825-17:34:36,321 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:36,322 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Cere/get_subjinfo".
+220825-17:34:36,424 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:36,424 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Cere/modelspec".
+220825-17:34:36,448 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:36,448 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Cere/level1design".
+220825-17:34:36,511 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:36,511 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Cere/modelgen".
+220825-17:34:36,522 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:36,522 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Cere/level1estimate".
+220825-17:34:36,527 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:36,527 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGm/get_predictors".
+220825-17:34:36,532 nipype.workflow INFO:
+	 [Node] "workflow.get_predictors" found cached.
+220825-17:34:36,532 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGm/get_subjinfo".
+220825-17:34:36,632 nipype.workflow INFO:
+	 [Node] "workflow.get_subjinfo" found cached.
+220825-17:34:36,632 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGm/modelspec".
+220825-17:34:36,655 nipype.workflow INFO:
+	 [Node] "workflow.modelspec" found cached.
+220825-17:34:36,655 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGm/level1design".
+220825-17:34:36,718 nipype.workflow INFO:
+	 [Node] "workflow.level1design" found cached.
+220825-17:34:36,718 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGm/modelgen".
+220825-17:34:36,729 nipype.workflow INFO:
+	 [Node] "workflow.modelgen" found cached.
+220825-17:34:36,729 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGm/level1estimate".
+220825-17:34:36,734 nipype.workflow INFO:
+	 [Node] "workflow.level1estimate" found cached.
+220825-17:34:36,734 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/get_predictors".
+220825-17:34:36,747 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/get_predictors/mapflow/_get_predictors0".
+220825-17:34:36,755 nipype.workflow INFO:
+	 [Node] Running "_get_predictors0" ("nipype.interfaces.utility.wrappers.Function")
+/home/pw/.local/lib/python3.7/site-packages/nilearn/glm/__init__.py:56: FutureWarning: The nilearn.glm module is experimental. It may change in any future release of Nilearn.
+  'It may change in any future release of Nilearn.', FutureWarning)
+220825-17:34:37,721 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors0".
+220825-17:34:37,722 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/get_predictors/mapflow/_get_predictors1".
+220825-17:34:37,734 nipype.workflow INFO:
+	 [Node] Running "_get_predictors1" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:34:37,789 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors1".
+220825-17:34:37,790 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/get_predictors/mapflow/_get_predictors2".
+220825-17:34:37,798 nipype.workflow INFO:
+	 [Node] Running "_get_predictors2" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:34:37,852 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors2".
+220825-17:34:37,893 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_predictors".
+220825-17:34:37,893 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/get_subjinfo".
+220825-17:34:38,96 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/get_subjinfo/mapflow/_get_subjinfo0".
+220825-17:34:38,141 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo0" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:34:38,174 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo0".
+220825-17:34:38,176 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/get_subjinfo/mapflow/_get_subjinfo1".
+220825-17:34:38,218 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo1" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:34:38,251 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo1".
+220825-17:34:38,252 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/get_subjinfo/mapflow/_get_subjinfo2".
+220825-17:34:38,294 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo2" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:34:38,327 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo2".
+220825-17:34:38,434 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_subjinfo".
+220825-17:34:38,434 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelspec".
+220825-17:34:38,496 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelspec/mapflow/_modelspec0".
+220825-17:34:38,512 nipype.workflow INFO:
+	 [Node] Running "_modelspec0" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:34:38,548 nipype.workflow INFO:
+	 [Node] Finished "_modelspec0".
+220825-17:34:38,551 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelspec/mapflow/_modelspec1".
+220825-17:34:38,589 nipype.workflow INFO:
+	 [Node] Running "_modelspec1" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:34:38,631 nipype.workflow INFO:
+	 [Node] Finished "_modelspec1".
+220825-17:34:38,634 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelspec/mapflow/_modelspec2".
+220825-17:34:38,652 nipype.workflow INFO:
+	 [Node] Running "_modelspec2" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:34:38,689 nipype.workflow INFO:
+	 [Node] Finished "_modelspec2".
+220825-17:34:38,756 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelspec".
+220825-17:34:38,756 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/level1design".
+220825-17:34:38,980 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/level1design/mapflow/_level1design0".
+220825-17:34:39,78 nipype.workflow INFO:
+	 [Node] Running "_level1design0" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:34:39,141 nipype.workflow INFO:
+	 [Node] Finished "_level1design0".
+220825-17:34:39,142 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/level1design/mapflow/_level1design1".
+220825-17:34:39,203 nipype.workflow INFO:
+	 [Node] Running "_level1design1" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:34:39,270 nipype.workflow INFO:
+	 [Node] Finished "_level1design1".
+220825-17:34:39,271 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/level1design/mapflow/_level1design2".
+220825-17:34:39,332 nipype.workflow INFO:
+	 [Node] Running "_level1design2" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:34:39,376 nipype.workflow INFO:
+	 [Node] Finished "_level1design2".
+220825-17:34:39,454 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1design".
+220825-17:34:39,455 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen".
+220825-17:34:39,471 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen/mapflow/_modelgen0".
+220825-17:34:39,486 nipype.workflow INFO:
+	 [Node] Running "_modelgen0" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:34:39,775 nipype.workflow INFO:
+	 [Node] Finished "_modelgen0".
+220825-17:34:39,777 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen/mapflow/_modelgen1".
+220825-17:34:39,795 nipype.workflow INFO:
+	 [Node] Running "_modelgen1" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:34:40,74 nipype.workflow INFO:
+	 [Node] Finished "_modelgen1".
+220825-17:34:40,75 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen/mapflow/_modelgen2".
+220825-17:34:40,89 nipype.workflow INFO:
+	 [Node] Running "_modelgen2" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:34:40,364 nipype.workflow INFO:
+	 [Node] Finished "_modelgen2".
+220825-17:34:40,368 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelgen".
+220825-17:34:40,368 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/level1estimate".
+220825-17:34:40,378 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/level1estimate/mapflow/_level1estimate0".
+220825-17:34:40,385 nipype.workflow INFO:
+	 [Node] Running "_level1estimate0" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen/mapflow/_modelgen0/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth0/sub-013_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen/mapflow/_modelgen0/run0.mat --thr=1000.000000
+220825-17:34:40,409 nipype.interface INFO:
+	 stdout 2022-08-25T17:34:40.409865:Log directory is: results
+220825-17:34:44,542 nipype.interface INFO:
+	 stdout 2022-08-25T17:34:44.542177:paradigm.getDesignMatrix().Nrows()=185
+220825-17:34:44,542 nipype.interface INFO:
+	 stdout 2022-08-25T17:34:44.542177:paradigm.getDesignMatrix().Ncols()=13
+220825-17:34:44,542 nipype.interface INFO:
+	 stdout 2022-08-25T17:34:44.542177:sizeTS=185
+220825-17:34:44,542 nipype.interface INFO:
+	 stdout 2022-08-25T17:34:44.542177:numTS=236715
+220825-17:34:44,635 nipype.interface INFO:
+	 stdout 2022-08-25T17:34:44.635216:Calculating residuals...
+220825-17:35:06,359 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:06.359677:Completed
+220825-17:35:06,359 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:06.359677:Estimating residual autocorrelation...
+220825-17:35:10,727 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:10.727705:Calculating raw AutoCorrs... Completed
+220825-17:35:10,733 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:10.733723:mode = 5765.16
+220825-17:35:10,735 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:10.735107:sig = 1005
+220825-17:35:10,735 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:10.735167:Spatially smoothing auto corr estimates
+220825-17:35:48,945 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:48.945889:............
+220825-17:35:48,946 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:48.945889:Completed
+220825-17:35:48,946 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:48.946347:Tukey M = 13
+220825-17:35:48,972 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:48.972804:Tukey estimates... Completed
+220825-17:35:48,972 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:48.972804:Completed
+220825-17:35:48,972 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:48.972804:Prewhitening and Computing PEs...
+220825-17:35:48,972 nipype.interface INFO:
+	 stdout 2022-08-25T17:35:48.972804:Percentage done:
+220825-17:37:01,904 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:01.904092:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:37:01,904 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:01.904092:Saving results... 
+220825-17:37:10,819 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:10.819556:Completed
+220825-17:37:10,934 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate0".
+220825-17:37:10,936 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/level1estimate/mapflow/_level1estimate1".
+220825-17:37:10,941 nipype.workflow INFO:
+	 [Node] Running "_level1estimate1" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen/mapflow/_modelgen1/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth1/sub-013_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen/mapflow/_modelgen1/run0.mat --thr=1000.000000
+220825-17:37:10,961 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:10.961545:Log directory is: results
+220825-17:37:15,164 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:15.164650:paradigm.getDesignMatrix().Nrows()=185
+220825-17:37:15,164 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:15.164650:paradigm.getDesignMatrix().Ncols()=13
+220825-17:37:15,164 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:15.164650:sizeTS=185
+220825-17:37:15,164 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:15.164650:numTS=232267
+220825-17:37:15,250 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:15.250900:Calculating residuals...
+220825-17:37:37,1 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:37.001217:Completed
+220825-17:37:37,1 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:37.001217:Estimating residual autocorrelation...
+220825-17:37:41,394 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:41.394882:Calculating raw AutoCorrs... Completed
+220825-17:37:41,400 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:41.400701:mode = 5760.96
+220825-17:37:41,402 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:41.402070:sig = 982
+220825-17:37:41,402 nipype.interface INFO:
+	 stdout 2022-08-25T17:37:41.402131:Spatially smoothing auto corr estimates
+220825-17:38:20,626 nipype.interface INFO:
+	 stdout 2022-08-25T17:38:20.626067:............
+220825-17:38:20,626 nipype.interface INFO:
+	 stdout 2022-08-25T17:38:20.626067:Completed
+220825-17:38:20,626 nipype.interface INFO:
+	 stdout 2022-08-25T17:38:20.626231:Tukey M = 13
+220825-17:38:20,651 nipype.interface INFO:
+	 stdout 2022-08-25T17:38:20.651525:Tukey estimates... Completed
+220825-17:38:20,651 nipype.interface INFO:
+	 stdout 2022-08-25T17:38:20.651525:Completed
+220825-17:38:20,651 nipype.interface INFO:
+	 stdout 2022-08-25T17:38:20.651525:Prewhitening and Computing PEs...
+220825-17:38:20,651 nipype.interface INFO:
+	 stdout 2022-08-25T17:38:20.651525:Percentage done:
+220825-17:39:34,557 nipype.interface INFO:
+	 stdout 2022-08-25T17:39:34.557442:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:39:34,557 nipype.interface INFO:
+	 stdout 2022-08-25T17:39:34.557442:Saving results... 
+220825-17:39:43,783 nipype.interface INFO:
+	 stdout 2022-08-25T17:39:43.783388:Completed
+220825-17:39:43,903 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate1".
+220825-17:39:43,906 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/level1estimate/mapflow/_level1estimate2".
+220825-17:39:43,914 nipype.workflow INFO:
+	 [Node] Running "_level1estimate2" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen/mapflow/_modelgen2/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth2/sub-013_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_FFGl/modelgen/mapflow/_modelgen2/run0.mat --thr=1000.000000
+220825-17:39:43,938 nipype.interface INFO:
+	 stdout 2022-08-25T17:39:43.938641:Log directory is: results
+220825-17:39:48,68 nipype.interface INFO:
+	 stdout 2022-08-25T17:39:48.068737:paradigm.getDesignMatrix().Nrows()=185
+220825-17:39:48,68 nipype.interface INFO:
+	 stdout 2022-08-25T17:39:48.068737:paradigm.getDesignMatrix().Ncols()=13
+220825-17:39:48,68 nipype.interface INFO:
+	 stdout 2022-08-25T17:39:48.068737:sizeTS=185
+220825-17:39:48,68 nipype.interface INFO:
+	 stdout 2022-08-25T17:39:48.068737:numTS=235718
+220825-17:39:48,155 nipype.interface INFO:
+	 stdout 2022-08-25T17:39:48.155682:Calculating residuals...
+220825-17:40:09,734 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:09.734878:Completed
+220825-17:40:09,735 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:09.734878:Estimating residual autocorrelation...
+220825-17:40:14,86 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:14.086805:Calculating raw AutoCorrs... Completed
+220825-17:40:14,92 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:14.092671:mode = 5838.16
+220825-17:40:14,94 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:14.094023:sig = 940
+220825-17:40:14,94 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:14.094083:Spatially smoothing auto corr estimates
+220825-17:40:52,299 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:52.299730:............
+220825-17:40:52,299 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:52.299730:Completed
+220825-17:40:52,300 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:52.300115:Tukey M = 13
+220825-17:40:52,326 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:52.325997:Tukey estimates... Completed
+220825-17:40:52,326 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:52.325997:Completed
+220825-17:40:52,326 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:52.325997:Prewhitening and Computing PEs...
+220825-17:40:52,326 nipype.interface INFO:
+	 stdout 2022-08-25T17:40:52.325997:Percentage done:
+220825-17:42:05,89 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:05.089403:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:42:05,89 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:05.089403:Saving results... 
+220825-17:42:14,121 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:14.121643:Completed
+220825-17:42:14,247 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate2".
+220825-17:42:14,254 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1estimate".
+220825-17:42:14,254 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/get_predictors".
+220825-17:42:14,271 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/get_predictors/mapflow/_get_predictors0".
+220825-17:42:14,279 nipype.workflow INFO:
+	 [Node] Running "_get_predictors0" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:42:14,314 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors0".
+220825-17:42:14,315 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/get_predictors/mapflow/_get_predictors1".
+220825-17:42:14,322 nipype.workflow INFO:
+	 [Node] Running "_get_predictors1" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:42:14,350 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors1".
+220825-17:42:14,351 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/get_predictors/mapflow/_get_predictors2".
+220825-17:42:14,358 nipype.workflow INFO:
+	 [Node] Running "_get_predictors2" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:42:14,387 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors2".
+220825-17:42:14,427 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_predictors".
+220825-17:42:14,427 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/get_subjinfo".
+220825-17:42:14,602 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/get_subjinfo/mapflow/_get_subjinfo0".
+220825-17:42:14,642 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo0" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:42:14,674 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo0".
+220825-17:42:14,675 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/get_subjinfo/mapflow/_get_subjinfo1".
+220825-17:42:14,715 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo1" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:42:14,747 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo1".
+220825-17:42:14,748 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/get_subjinfo/mapflow/_get_subjinfo2".
+220825-17:42:14,817 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo2" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:42:14,850 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo2".
+220825-17:42:14,932 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_subjinfo".
+220825-17:42:14,932 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelspec".
+220825-17:42:14,992 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelspec/mapflow/_modelspec0".
+220825-17:42:15,25 nipype.workflow INFO:
+	 [Node] Running "_modelspec0" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:42:15,59 nipype.workflow INFO:
+	 [Node] Finished "_modelspec0".
+220825-17:42:15,62 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelspec/mapflow/_modelspec1".
+220825-17:42:15,78 nipype.workflow INFO:
+	 [Node] Running "_modelspec1" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:42:15,112 nipype.workflow INFO:
+	 [Node] Finished "_modelspec1".
+220825-17:42:15,115 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelspec/mapflow/_modelspec2".
+220825-17:42:15,170 nipype.workflow INFO:
+	 [Node] Running "_modelspec2" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:42:15,205 nipype.workflow INFO:
+	 [Node] Finished "_modelspec2".
+220825-17:42:15,326 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelspec".
+220825-17:42:15,326 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/level1design".
+220825-17:42:15,603 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/level1design/mapflow/_level1design0".
+220825-17:42:15,670 nipype.workflow INFO:
+	 [Node] Running "_level1design0" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:42:15,712 nipype.workflow INFO:
+	 [Node] Finished "_level1design0".
+220825-17:42:15,713 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/level1design/mapflow/_level1design1".
+220825-17:42:15,778 nipype.workflow INFO:
+	 [Node] Running "_level1design1" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:42:15,836 nipype.workflow INFO:
+	 [Node] Finished "_level1design1".
+220825-17:42:15,837 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/level1design/mapflow/_level1design2".
+220825-17:42:15,897 nipype.workflow INFO:
+	 [Node] Running "_level1design2" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:42:15,940 nipype.workflow INFO:
+	 [Node] Finished "_level1design2".
+220825-17:42:16,19 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1design".
+220825-17:42:16,19 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen".
+220825-17:42:16,32 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen/mapflow/_modelgen0".
+220825-17:42:16,47 nipype.workflow INFO:
+	 [Node] Running "_modelgen0" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:42:16,339 nipype.workflow INFO:
+	 [Node] Finished "_modelgen0".
+220825-17:42:16,341 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen/mapflow/_modelgen1".
+220825-17:42:16,353 nipype.workflow INFO:
+	 [Node] Running "_modelgen1" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:42:16,626 nipype.workflow INFO:
+	 [Node] Finished "_modelgen1".
+220825-17:42:16,627 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen/mapflow/_modelgen2".
+220825-17:42:16,643 nipype.workflow INFO:
+	 [Node] Running "_modelgen2" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:42:16,923 nipype.workflow INFO:
+	 [Node] Finished "_modelgen2".
+220825-17:42:16,927 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelgen".
+220825-17:42:16,928 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/level1estimate".
+220825-17:42:16,937 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/level1estimate/mapflow/_level1estimate0".
+220825-17:42:16,943 nipype.workflow INFO:
+	 [Node] Running "_level1estimate0" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen/mapflow/_modelgen0/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth0/sub-013_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen/mapflow/_modelgen0/run0.mat --thr=1000.000000
+220825-17:42:16,964 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:16.964744:Log directory is: results
+220825-17:42:21,65 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:21.065876:paradigm.getDesignMatrix().Nrows()=185
+220825-17:42:21,66 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:21.065876:paradigm.getDesignMatrix().Ncols()=13
+220825-17:42:21,66 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:21.065876:sizeTS=185
+220825-17:42:21,66 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:21.065876:numTS=236715
+220825-17:42:21,152 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:21.152603:Calculating residuals...
+220825-17:42:42,683 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:42.683560:Completed
+220825-17:42:42,683 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:42.683560:Estimating residual autocorrelation...
+220825-17:42:47,100 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:47.100681:Calculating raw AutoCorrs... Completed
+220825-17:42:47,106 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:47.106424:mode = 5765.16
+220825-17:42:47,107 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:47.107800:sig = 1005
+220825-17:42:47,107 nipype.interface INFO:
+	 stdout 2022-08-25T17:42:47.107846:Spatially smoothing auto corr estimates
+220825-17:43:25,402 nipype.interface INFO:
+	 stdout 2022-08-25T17:43:25.402066:............
+220825-17:43:25,402 nipype.interface INFO:
+	 stdout 2022-08-25T17:43:25.402066:Completed
+220825-17:43:25,402 nipype.interface INFO:
+	 stdout 2022-08-25T17:43:25.402521:Tukey M = 13
+220825-17:43:25,428 nipype.interface INFO:
+	 stdout 2022-08-25T17:43:25.428645:Tukey estimates... Completed
+220825-17:43:25,428 nipype.interface INFO:
+	 stdout 2022-08-25T17:43:25.428645:Completed
+220825-17:43:25,428 nipype.interface INFO:
+	 stdout 2022-08-25T17:43:25.428645:Prewhitening and Computing PEs...
+220825-17:43:25,428 nipype.interface INFO:
+	 stdout 2022-08-25T17:43:25.428645:Percentage done:
+220825-17:44:38,938 nipype.interface INFO:
+	 stdout 2022-08-25T17:44:38.938572:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:44:38,938 nipype.interface INFO:
+	 stdout 2022-08-25T17:44:38.938572:Saving results... 
+220825-17:44:47,951 nipype.interface INFO:
+	 stdout 2022-08-25T17:44:47.951263:Completed
+220825-17:44:48,55 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate0".
+220825-17:44:48,58 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/level1estimate/mapflow/_level1estimate1".
+220825-17:44:48,82 nipype.workflow INFO:
+	 [Node] Running "_level1estimate1" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen/mapflow/_modelgen1/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth1/sub-013_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen/mapflow/_modelgen1/run0.mat --thr=1000.000000
+220825-17:44:48,105 nipype.interface INFO:
+	 stdout 2022-08-25T17:44:48.105651:Log directory is: results
+220825-17:44:52,152 nipype.interface INFO:
+	 stdout 2022-08-25T17:44:52.152342:paradigm.getDesignMatrix().Nrows()=185
+220825-17:44:52,152 nipype.interface INFO:
+	 stdout 2022-08-25T17:44:52.152342:paradigm.getDesignMatrix().Ncols()=13
+220825-17:44:52,152 nipype.interface INFO:
+	 stdout 2022-08-25T17:44:52.152342:sizeTS=185
+220825-17:44:52,152 nipype.interface INFO:
+	 stdout 2022-08-25T17:44:52.152342:numTS=232267
+220825-17:44:52,236 nipype.interface INFO:
+	 stdout 2022-08-25T17:44:52.236524:Calculating residuals...
+220825-17:45:13,123 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:13.123282:Completed
+220825-17:45:13,123 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:13.123282:Estimating residual autocorrelation...
+220825-17:45:17,358 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:17.358821:Calculating raw AutoCorrs... Completed
+220825-17:45:17,364 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:17.364442:mode = 5760.96
+220825-17:45:17,365 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:17.365771:sig = 982
+220825-17:45:17,365 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:17.365833:Spatially smoothing auto corr estimates
+220825-17:45:54,754 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:54.754209:............
+220825-17:45:54,754 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:54.754209:Completed
+220825-17:45:54,754 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:54.754461:Tukey M = 13
+220825-17:45:54,778 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:54.778316:Tukey estimates... Completed
+220825-17:45:54,778 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:54.778316:Completed
+220825-17:45:54,778 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:54.778316:Prewhitening and Computing PEs...
+220825-17:45:54,778 nipype.interface INFO:
+	 stdout 2022-08-25T17:45:54.778316:Percentage done:
+220825-17:47:05,109 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:05.108988:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:47:05,109 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:05.108988:Saving results... 
+220825-17:47:13,942 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:13.942855:Completed
+220825-17:47:14,73 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate1".
+220825-17:47:14,77 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/level1estimate/mapflow/_level1estimate2".
+220825-17:47:14,86 nipype.workflow INFO:
+	 [Node] Running "_level1estimate2" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen/mapflow/_modelgen2/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth2/sub-013_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IfGi/modelgen/mapflow/_modelgen2/run0.mat --thr=1000.000000
+220825-17:47:14,115 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:14.115860:Log directory is: results
+220825-17:47:18,233 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:18.233868:paradigm.getDesignMatrix().Nrows()=185
+220825-17:47:18,233 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:18.233868:paradigm.getDesignMatrix().Ncols()=13
+220825-17:47:18,234 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:18.233868:sizeTS=185
+220825-17:47:18,234 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:18.233868:numTS=235718
+220825-17:47:18,319 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:18.319807:Calculating residuals...
+220825-17:47:39,921 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:39.921601:Completed
+220825-17:47:39,921 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:39.921601:Estimating residual autocorrelation...
+220825-17:47:44,287 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:44.287160:Calculating raw AutoCorrs... Completed
+220825-17:47:44,293 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:44.293130:mode = 5838.16
+220825-17:47:44,294 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:44.294465:sig = 940
+220825-17:47:44,294 nipype.interface INFO:
+	 stdout 2022-08-25T17:47:44.294525:Spatially smoothing auto corr estimates
+220825-17:48:22,706 nipype.interface INFO:
+	 stdout 2022-08-25T17:48:22.706590:............
+220825-17:48:22,706 nipype.interface INFO:
+	 stdout 2022-08-25T17:48:22.706590:Completed
+220825-17:48:22,707 nipype.interface INFO:
+	 stdout 2022-08-25T17:48:22.707092:Tukey M = 13
+220825-17:48:22,732 nipype.interface INFO:
+	 stdout 2022-08-25T17:48:22.732340:Tukey estimates... Completed
+220825-17:48:22,732 nipype.interface INFO:
+	 stdout 2022-08-25T17:48:22.732340:Completed
+220825-17:48:22,732 nipype.interface INFO:
+	 stdout 2022-08-25T17:48:22.732340:Prewhitening and Computing PEs...
+220825-17:48:22,732 nipype.interface INFO:
+	 stdout 2022-08-25T17:48:22.732340:Percentage done:
+220825-17:49:35,991 nipype.interface INFO:
+	 stdout 2022-08-25T17:49:35.991097:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:49:35,991 nipype.interface INFO:
+	 stdout 2022-08-25T17:49:35.991097:Saving results... 
+220825-17:49:44,929 nipype.interface INFO:
+	 stdout 2022-08-25T17:49:44.929809:Completed
+220825-17:49:45,39 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate2".
+220825-17:49:45,44 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1estimate".
+220825-17:49:45,44 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/get_predictors".
+220825-17:49:45,65 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/get_predictors/mapflow/_get_predictors0".
+220825-17:49:45,73 nipype.workflow INFO:
+	 [Node] Running "_get_predictors0" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:49:45,107 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors0".
+220825-17:49:45,108 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/get_predictors/mapflow/_get_predictors1".
+220825-17:49:45,115 nipype.workflow INFO:
+	 [Node] Running "_get_predictors1" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:49:45,145 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors1".
+220825-17:49:45,145 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/get_predictors/mapflow/_get_predictors2".
+220825-17:49:45,152 nipype.workflow INFO:
+	 [Node] Running "_get_predictors2" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:49:45,181 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors2".
+220825-17:49:45,247 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_predictors".
+220825-17:49:45,247 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/get_subjinfo".
+220825-17:49:45,421 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/get_subjinfo/mapflow/_get_subjinfo0".
+220825-17:49:45,461 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo0" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:49:45,493 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo0".
+220825-17:49:45,494 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/get_subjinfo/mapflow/_get_subjinfo1".
+220825-17:49:45,535 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo1" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:49:45,586 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo1".
+220825-17:49:45,588 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/get_subjinfo/mapflow/_get_subjinfo2".
+220825-17:49:45,634 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo2" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:49:45,665 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo2".
+220825-17:49:45,748 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_subjinfo".
+220825-17:49:45,749 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelspec".
+220825-17:49:45,823 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelspec/mapflow/_modelspec0".
+220825-17:49:45,840 nipype.workflow INFO:
+	 [Node] Running "_modelspec0" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:49:45,908 nipype.workflow INFO:
+	 [Node] Finished "_modelspec0".
+220825-17:49:45,910 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelspec/mapflow/_modelspec1".
+220825-17:49:45,926 nipype.workflow INFO:
+	 [Node] Running "_modelspec1" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:49:45,961 nipype.workflow INFO:
+	 [Node] Finished "_modelspec1".
+220825-17:49:45,964 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelspec/mapflow/_modelspec2".
+220825-17:49:45,995 nipype.workflow INFO:
+	 [Node] Running "_modelspec2" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:49:46,32 nipype.workflow INFO:
+	 [Node] Finished "_modelspec2".
+220825-17:49:46,129 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelspec".
+220825-17:49:46,130 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/level1design".
+220825-17:49:46,349 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/level1design/mapflow/_level1design0".
+220825-17:49:46,409 nipype.workflow INFO:
+	 [Node] Running "_level1design0" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:49:46,454 nipype.workflow INFO:
+	 [Node] Finished "_level1design0".
+220825-17:49:46,455 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/level1design/mapflow/_level1design1".
+220825-17:49:46,536 nipype.workflow INFO:
+	 [Node] Running "_level1design1" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:49:46,574 nipype.workflow INFO:
+	 [Node] Finished "_level1design1".
+220825-17:49:46,575 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/level1design/mapflow/_level1design2".
+220825-17:49:46,635 nipype.workflow INFO:
+	 [Node] Running "_level1design2" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:49:46,677 nipype.workflow INFO:
+	 [Node] Finished "_level1design2".
+220825-17:49:46,738 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1design".
+220825-17:49:46,738 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen".
+220825-17:49:46,750 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen/mapflow/_modelgen0".
+220825-17:49:46,786 nipype.workflow INFO:
+	 [Node] Running "_modelgen0" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:49:47,69 nipype.workflow INFO:
+	 [Node] Finished "_modelgen0".
+220825-17:49:47,70 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen/mapflow/_modelgen1".
+220825-17:49:47,84 nipype.workflow INFO:
+	 [Node] Running "_modelgen1" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:49:47,402 nipype.workflow INFO:
+	 [Node] Finished "_modelgen1".
+220825-17:49:47,403 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen/mapflow/_modelgen2".
+220825-17:49:47,417 nipype.workflow INFO:
+	 [Node] Running "_modelgen2" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:49:47,689 nipype.workflow INFO:
+	 [Node] Finished "_modelgen2".
+220825-17:49:47,693 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelgen".
+220825-17:49:47,693 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/level1estimate".
+220825-17:49:47,701 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/level1estimate/mapflow/_level1estimate0".
+220825-17:49:47,707 nipype.workflow INFO:
+	 [Node] Running "_level1estimate0" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen/mapflow/_modelgen0/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth0/sub-013_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen/mapflow/_modelgen0/run0.mat --thr=1000.000000
+220825-17:49:47,729 nipype.interface INFO:
+	 stdout 2022-08-25T17:49:47.729804:Log directory is: results
+220825-17:49:51,854 nipype.interface INFO:
+	 stdout 2022-08-25T17:49:51.854943:paradigm.getDesignMatrix().Nrows()=185
+220825-17:49:51,855 nipype.interface INFO:
+	 stdout 2022-08-25T17:49:51.854943:paradigm.getDesignMatrix().Ncols()=13
+220825-17:49:51,855 nipype.interface INFO:
+	 stdout 2022-08-25T17:49:51.854943:sizeTS=185
+220825-17:49:51,855 nipype.interface INFO:
+	 stdout 2022-08-25T17:49:51.854943:numTS=236715
+220825-17:49:51,941 nipype.interface INFO:
+	 stdout 2022-08-25T17:49:51.941241:Calculating residuals...
+220825-17:50:13,695 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:13.695582:Completed
+220825-17:50:13,695 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:13.695582:Estimating residual autocorrelation...
+220825-17:50:18,85 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:18.085341:Calculating raw AutoCorrs... Completed
+220825-17:50:18,91 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:18.091370:mode = 5765.16
+220825-17:50:18,92 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:18.092731:sig = 1005
+220825-17:50:18,92 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:18.092791:Spatially smoothing auto corr estimates
+220825-17:50:56,532 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:56.532609:............
+220825-17:50:56,532 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:56.532609:Completed
+220825-17:50:56,533 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:56.533058:Tukey M = 13
+220825-17:50:56,557 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:56.557205:Tukey estimates... Completed
+220825-17:50:56,557 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:56.557205:Completed
+220825-17:50:56,557 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:56.557205:Prewhitening and Computing PEs...
+220825-17:50:56,557 nipype.interface INFO:
+	 stdout 2022-08-25T17:50:56.557205:Percentage done:
+220825-17:52:10,299 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:10.299364:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:52:10,299 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:10.299364:Saving results... 
+220825-17:52:19,316 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:19.316090:Completed
+220825-17:52:19,427 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate0".
+220825-17:52:19,429 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/level1estimate/mapflow/_level1estimate1".
+220825-17:52:19,454 nipype.workflow INFO:
+	 [Node] Running "_level1estimate1" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen/mapflow/_modelgen1/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth1/sub-013_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen/mapflow/_modelgen1/run0.mat --thr=1000.000000
+220825-17:52:19,477 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:19.477180:Log directory is: results
+220825-17:52:23,564 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:23.564250:paradigm.getDesignMatrix().Nrows()=185
+220825-17:52:23,564 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:23.564250:paradigm.getDesignMatrix().Ncols()=13
+220825-17:52:23,564 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:23.564250:sizeTS=185
+220825-17:52:23,564 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:23.564250:numTS=232267
+220825-17:52:23,648 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:23.648913:Calculating residuals...
+220825-17:52:45,166 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:45.166693:Completed
+220825-17:52:45,166 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:45.166693:Estimating residual autocorrelation...
+220825-17:52:49,463 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:49.462968:Calculating raw AutoCorrs... Completed
+220825-17:52:49,468 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:49.468812:mode = 5760.96
+220825-17:52:49,470 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:49.470160:sig = 982
+220825-17:52:49,470 nipype.interface INFO:
+	 stdout 2022-08-25T17:52:49.470223:Spatially smoothing auto corr estimates
+220825-17:53:27,876 nipype.interface INFO:
+	 stdout 2022-08-25T17:53:27.876648:............
+220825-17:53:27,876 nipype.interface INFO:
+	 stdout 2022-08-25T17:53:27.876648:Completed
+220825-17:53:27,877 nipype.interface INFO:
+	 stdout 2022-08-25T17:53:27.877069:Tukey M = 13
+220825-17:53:27,900 nipype.interface INFO:
+	 stdout 2022-08-25T17:53:27.900940:Tukey estimates... Completed
+220825-17:53:27,901 nipype.interface INFO:
+	 stdout 2022-08-25T17:53:27.900940:Completed
+220825-17:53:27,901 nipype.interface INFO:
+	 stdout 2022-08-25T17:53:27.900940:Prewhitening and Computing PEs...
+220825-17:53:27,901 nipype.interface INFO:
+	 stdout 2022-08-25T17:53:27.900940:Percentage done:
+220825-17:54:40,171 nipype.interface INFO:
+	 stdout 2022-08-25T17:54:40.170991:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:54:40,171 nipype.interface INFO:
+	 stdout 2022-08-25T17:54:40.170991:Saving results... 
+220825-17:54:49,19 nipype.interface INFO:
+	 stdout 2022-08-25T17:54:49.019341:Completed
+220825-17:54:49,149 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate1".
+220825-17:54:49,153 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/level1estimate/mapflow/_level1estimate2".
+220825-17:54:49,160 nipype.workflow INFO:
+	 [Node] Running "_level1estimate2" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen/mapflow/_modelgen2/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth2/sub-013_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_IFGs/modelgen/mapflow/_modelgen2/run0.mat --thr=1000.000000
+220825-17:54:49,184 nipype.interface INFO:
+	 stdout 2022-08-25T17:54:49.184481:Log directory is: results
+220825-17:54:53,228 nipype.interface INFO:
+	 stdout 2022-08-25T17:54:53.228670:paradigm.getDesignMatrix().Nrows()=185
+220825-17:54:53,228 nipype.interface INFO:
+	 stdout 2022-08-25T17:54:53.228670:paradigm.getDesignMatrix().Ncols()=13
+220825-17:54:53,228 nipype.interface INFO:
+	 stdout 2022-08-25T17:54:53.228670:sizeTS=185
+220825-17:54:53,228 nipype.interface INFO:
+	 stdout 2022-08-25T17:54:53.228670:numTS=235718
+220825-17:54:53,314 nipype.interface INFO:
+	 stdout 2022-08-25T17:54:53.314012:Calculating residuals...
+220825-17:55:14,742 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:14.742612:Completed
+220825-17:55:14,742 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:14.742612:Estimating residual autocorrelation...
+220825-17:55:19,0 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:19.000825:Calculating raw AutoCorrs... Completed
+220825-17:55:19,6 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:19.006521:mode = 5838.16
+220825-17:55:19,7 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:19.007856:sig = 940
+220825-17:55:19,7 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:19.007897:Spatially smoothing auto corr estimates
+220825-17:55:56,418 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:56.417995:............
+220825-17:55:56,418 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:56.417995:Completed
+220825-17:55:56,418 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:56.418154:Tukey M = 13
+220825-17:55:56,444 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:56.444182:Tukey estimates... Completed
+220825-17:55:56,444 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:56.444182:Completed
+220825-17:55:56,444 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:56.444182:Prewhitening and Computing PEs...
+220825-17:55:56,444 nipype.interface INFO:
+	 stdout 2022-08-25T17:55:56.444182:Percentage done:
+220825-17:57:08,3 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:08.003130:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:57:08,3 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:08.003130:Saving results... 
+220825-17:57:16,787 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:16.787361:Completed
+220825-17:57:16,889 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate2".
+220825-17:57:16,893 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1estimate".
+220825-17:57:16,894 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/get_predictors".
+220825-17:57:16,920 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/get_predictors/mapflow/_get_predictors0".
+220825-17:57:16,929 nipype.workflow INFO:
+	 [Node] Running "_get_predictors0" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:57:16,959 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors0".
+220825-17:57:16,960 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/get_predictors/mapflow/_get_predictors1".
+220825-17:57:16,967 nipype.workflow INFO:
+	 [Node] Running "_get_predictors1" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:57:16,995 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors1".
+220825-17:57:16,996 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/get_predictors/mapflow/_get_predictors2".
+220825-17:57:17,3 nipype.workflow INFO:
+	 [Node] Running "_get_predictors2" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:57:17,31 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors2".
+220825-17:57:17,70 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_predictors".
+220825-17:57:17,70 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/get_subjinfo".
+220825-17:57:17,241 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/get_subjinfo/mapflow/_get_subjinfo0".
+220825-17:57:17,280 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo0" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:57:17,311 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo0".
+220825-17:57:17,313 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/get_subjinfo/mapflow/_get_subjinfo1".
+220825-17:57:17,351 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo1" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:57:17,405 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo1".
+220825-17:57:17,406 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/get_subjinfo/mapflow/_get_subjinfo2".
+220825-17:57:17,444 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo2" ("nipype.interfaces.utility.wrappers.Function")
+220825-17:57:17,504 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo2".
+220825-17:57:17,585 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_subjinfo".
+220825-17:57:17,585 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelspec".
+220825-17:57:17,640 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelspec/mapflow/_modelspec0".
+220825-17:57:17,660 nipype.workflow INFO:
+	 [Node] Running "_modelspec0" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:57:17,694 nipype.workflow INFO:
+	 [Node] Finished "_modelspec0".
+220825-17:57:17,697 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelspec/mapflow/_modelspec1".
+220825-17:57:17,717 nipype.workflow INFO:
+	 [Node] Running "_modelspec1" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:57:17,752 nipype.workflow INFO:
+	 [Node] Finished "_modelspec1".
+220825-17:57:17,755 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelspec/mapflow/_modelspec2".
+220825-17:57:17,771 nipype.workflow INFO:
+	 [Node] Running "_modelspec2" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-17:57:17,806 nipype.workflow INFO:
+	 [Node] Finished "_modelspec2".
+220825-17:57:17,905 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelspec".
+220825-17:57:17,906 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/level1design".
+220825-17:57:18,138 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/level1design/mapflow/_level1design0".
+220825-17:57:18,197 nipype.workflow INFO:
+	 [Node] Running "_level1design0" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:57:18,239 nipype.workflow INFO:
+	 [Node] Finished "_level1design0".
+220825-17:57:18,240 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/level1design/mapflow/_level1design1".
+220825-17:57:18,313 nipype.workflow INFO:
+	 [Node] Running "_level1design1" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:57:18,363 nipype.workflow INFO:
+	 [Node] Finished "_level1design1".
+220825-17:57:18,364 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/level1design/mapflow/_level1design2".
+220825-17:57:18,423 nipype.workflow INFO:
+	 [Node] Running "_level1design2" ("nipype.interfaces.fsl.model.Level1Design")
+220825-17:57:18,462 nipype.workflow INFO:
+	 [Node] Finished "_level1design2".
+220825-17:57:18,522 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1design".
+220825-17:57:18,522 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen".
+220825-17:57:18,556 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen/mapflow/_modelgen0".
+220825-17:57:18,570 nipype.workflow INFO:
+	 [Node] Running "_modelgen0" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:57:18,849 nipype.workflow INFO:
+	 [Node] Finished "_modelgen0".
+220825-17:57:18,850 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen/mapflow/_modelgen1".
+220825-17:57:18,864 nipype.workflow INFO:
+	 [Node] Running "_modelgen1" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:57:19,134 nipype.workflow INFO:
+	 [Node] Finished "_modelgen1".
+220825-17:57:19,135 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen/mapflow/_modelgen2".
+220825-17:57:19,152 nipype.workflow INFO:
+	 [Node] Running "_modelgen2" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-17:57:19,430 nipype.workflow INFO:
+	 [Node] Finished "_modelgen2".
+220825-17:57:19,435 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelgen".
+220825-17:57:19,435 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/level1estimate".
+220825-17:57:19,444 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/level1estimate/mapflow/_level1estimate0".
+220825-17:57:19,451 nipype.workflow INFO:
+	 [Node] Running "_level1estimate0" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen/mapflow/_modelgen0/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth0/sub-013_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen/mapflow/_modelgen0/run0.mat --thr=1000.000000
+220825-17:57:19,475 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:19.475473:Log directory is: results
+220825-17:57:23,585 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:23.585616:paradigm.getDesignMatrix().Nrows()=185
+220825-17:57:23,585 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:23.585616:paradigm.getDesignMatrix().Ncols()=13
+220825-17:57:23,585 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:23.585616:sizeTS=185
+220825-17:57:23,585 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:23.585616:numTS=236715
+220825-17:57:23,671 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:23.671792:Calculating residuals...
+220825-17:57:45,392 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:45.392747:Completed
+220825-17:57:45,393 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:45.392747:Estimating residual autocorrelation...
+220825-17:57:49,740 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:49.740685:Calculating raw AutoCorrs... Completed
+220825-17:57:49,746 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:49.746677:mode = 5765.16
+220825-17:57:49,748 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:49.748039:sig = 1005
+220825-17:57:49,748 nipype.interface INFO:
+	 stdout 2022-08-25T17:57:49.748098:Spatially smoothing auto corr estimates
+220825-17:58:28,177 nipype.interface INFO:
+	 stdout 2022-08-25T17:58:28.177362:............
+220825-17:58:28,177 nipype.interface INFO:
+	 stdout 2022-08-25T17:58:28.177362:Completed
+220825-17:58:28,177 nipype.interface INFO:
+	 stdout 2022-08-25T17:58:28.177840:Tukey M = 13
+220825-17:58:28,204 nipype.interface INFO:
+	 stdout 2022-08-25T17:58:28.204179:Tukey estimates... Completed
+220825-17:58:28,204 nipype.interface INFO:
+	 stdout 2022-08-25T17:58:28.204179:Completed
+220825-17:58:28,204 nipype.interface INFO:
+	 stdout 2022-08-25T17:58:28.204179:Prewhitening and Computing PEs...
+220825-17:58:28,204 nipype.interface INFO:
+	 stdout 2022-08-25T17:58:28.204179:Percentage done:
+220825-17:59:41,851 nipype.interface INFO:
+	 stdout 2022-08-25T17:59:41.851576:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-17:59:41,851 nipype.interface INFO:
+	 stdout 2022-08-25T17:59:41.851576:Saving results... 
+220825-17:59:50,831 nipype.interface INFO:
+	 stdout 2022-08-25T17:59:50.831028:Completed
+220825-17:59:50,945 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate0".
+220825-17:59:50,947 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/level1estimate/mapflow/_level1estimate1".
+220825-17:59:50,953 nipype.workflow INFO:
+	 [Node] Running "_level1estimate1" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen/mapflow/_modelgen1/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth1/sub-013_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen/mapflow/_modelgen1/run0.mat --thr=1000.000000
+220825-17:59:50,975 nipype.interface INFO:
+	 stdout 2022-08-25T17:59:50.975592:Log directory is: results
+220825-17:59:55,19 nipype.interface INFO:
+	 stdout 2022-08-25T17:59:55.019555:paradigm.getDesignMatrix().Nrows()=185
+220825-17:59:55,19 nipype.interface INFO:
+	 stdout 2022-08-25T17:59:55.019555:paradigm.getDesignMatrix().Ncols()=13
+220825-17:59:55,19 nipype.interface INFO:
+	 stdout 2022-08-25T17:59:55.019555:sizeTS=185
+220825-17:59:55,19 nipype.interface INFO:
+	 stdout 2022-08-25T17:59:55.019555:numTS=232267
+220825-17:59:55,121 nipype.interface INFO:
+	 stdout 2022-08-25T17:59:55.121666:Calculating residuals...
+220825-18:00:15,840 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:15.840554:Completed
+220825-18:00:15,840 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:15.840554:Estimating residual autocorrelation...
+220825-18:00:20,70 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:20.070137:Calculating raw AutoCorrs... Completed
+220825-18:00:20,75 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:20.075776:mode = 5760.96
+220825-18:00:20,77 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:20.077097:sig = 982
+220825-18:00:20,77 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:20.077138:Spatially smoothing auto corr estimates
+220825-18:00:57,884 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:57.884694:............
+220825-18:00:57,884 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:57.884694:Completed
+220825-18:00:57,884 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:57.884919:Tukey M = 13
+220825-18:00:57,909 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:57.909602:Tukey estimates... Completed
+220825-18:00:57,909 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:57.909602:Completed
+220825-18:00:57,909 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:57.909602:Prewhitening and Computing PEs...
+220825-18:00:57,909 nipype.interface INFO:
+	 stdout 2022-08-25T18:00:57.909602:Percentage done:
+220825-18:02:08,926 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:08.926481:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-18:02:08,926 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:08.926481:Saving results... 
+220825-18:02:17,706 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:17.706399:Completed
+220825-18:02:17,811 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate1".
+220825-18:02:17,813 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/level1estimate/mapflow/_level1estimate2".
+220825-18:02:17,819 nipype.workflow INFO:
+	 [Node] Running "_level1estimate2" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen/mapflow/_modelgen2/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth2/sub-013_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_SFG/modelgen/mapflow/_modelgen2/run0.mat --thr=1000.000000
+220825-18:02:17,841 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:17.841270:Log directory is: results
+220825-18:02:21,934 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:21.933966:paradigm.getDesignMatrix().Nrows()=185
+220825-18:02:21,934 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:21.933966:paradigm.getDesignMatrix().Ncols()=13
+220825-18:02:21,934 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:21.933966:sizeTS=185
+220825-18:02:21,934 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:21.933966:numTS=235718
+220825-18:02:22,20 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:22.020051:Calculating residuals...
+220825-18:02:43,775 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:43.775854:Completed
+220825-18:02:43,776 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:43.775854:Estimating residual autocorrelation...
+220825-18:02:48,92 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:48.092458:Calculating raw AutoCorrs... Completed
+220825-18:02:48,98 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:48.098233:mode = 5838.16
+220825-18:02:48,99 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:48.099558:sig = 940
+220825-18:02:48,99 nipype.interface INFO:
+	 stdout 2022-08-25T18:02:48.099618:Spatially smoothing auto corr estimates
+220825-18:03:26,188 nipype.interface INFO:
+	 stdout 2022-08-25T18:03:26.188154:............
+220825-18:03:26,188 nipype.interface INFO:
+	 stdout 2022-08-25T18:03:26.188154:Completed
+220825-18:03:26,188 nipype.interface INFO:
+	 stdout 2022-08-25T18:03:26.188634:Tukey M = 13
+220825-18:03:26,215 nipype.interface INFO:
+	 stdout 2022-08-25T18:03:26.215874:Tukey estimates... Completed
+220825-18:03:26,216 nipype.interface INFO:
+	 stdout 2022-08-25T18:03:26.215874:Completed
+220825-18:03:26,216 nipype.interface INFO:
+	 stdout 2022-08-25T18:03:26.215874:Prewhitening and Computing PEs...
+220825-18:03:26,216 nipype.interface INFO:
+	 stdout 2022-08-25T18:03:26.215874:Percentage done:
+220825-18:04:38,849 nipype.interface INFO:
+	 stdout 2022-08-25T18:04:38.849296:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-18:04:38,849 nipype.interface INFO:
+	 stdout 2022-08-25T18:04:38.849296:Saving results... 
+220825-18:04:47,745 nipype.interface INFO:
+	 stdout 2022-08-25T18:04:47.745343:Completed
+220825-18:04:47,854 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate2".
+220825-18:04:47,860 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1estimate".
+220825-18:04:47,860 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/get_predictors".
+220825-18:04:47,876 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/get_predictors/mapflow/_get_predictors0".
+220825-18:04:47,884 nipype.workflow INFO:
+	 [Node] Running "_get_predictors0" ("nipype.interfaces.utility.wrappers.Function")
+220825-18:04:47,914 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors0".
+220825-18:04:47,915 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/get_predictors/mapflow/_get_predictors1".
+220825-18:04:47,923 nipype.workflow INFO:
+	 [Node] Running "_get_predictors1" ("nipype.interfaces.utility.wrappers.Function")
+220825-18:04:47,951 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors1".
+220825-18:04:47,952 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/get_predictors/mapflow/_get_predictors2".
+220825-18:04:47,959 nipype.workflow INFO:
+	 [Node] Running "_get_predictors2" ("nipype.interfaces.utility.wrappers.Function")
+220825-18:04:47,987 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors2".
+220825-18:04:48,26 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_predictors".
+220825-18:04:48,27 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/get_subjinfo".
+220825-18:04:48,197 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/get_subjinfo/mapflow/_get_subjinfo0".
+220825-18:04:48,237 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo0" ("nipype.interfaces.utility.wrappers.Function")
+220825-18:04:48,268 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo0".
+220825-18:04:48,269 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/get_subjinfo/mapflow/_get_subjinfo1".
+220825-18:04:48,343 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo1" ("nipype.interfaces.utility.wrappers.Function")
+220825-18:04:48,374 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo1".
+220825-18:04:48,375 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/get_subjinfo/mapflow/_get_subjinfo2".
+220825-18:04:48,413 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo2" ("nipype.interfaces.utility.wrappers.Function")
+220825-18:04:48,444 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo2".
+220825-18:04:48,525 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_subjinfo".
+220825-18:04:48,525 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelspec".
+220825-18:04:48,584 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelspec/mapflow/_modelspec0".
+220825-18:04:48,602 nipype.workflow INFO:
+	 [Node] Running "_modelspec0" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-18:04:48,640 nipype.workflow INFO:
+	 [Node] Finished "_modelspec0".
+220825-18:04:48,643 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelspec/mapflow/_modelspec1".
+220825-18:04:48,659 nipype.workflow INFO:
+	 [Node] Running "_modelspec1" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-18:04:48,702 nipype.workflow INFO:
+	 [Node] Finished "_modelspec1".
+220825-18:04:48,704 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelspec/mapflow/_modelspec2".
+220825-18:04:48,720 nipype.workflow INFO:
+	 [Node] Running "_modelspec2" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-18:04:48,754 nipype.workflow INFO:
+	 [Node] Finished "_modelspec2".
+220825-18:04:48,819 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelspec".
+220825-18:04:48,820 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/level1design".
+220825-18:04:49,30 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/level1design/mapflow/_level1design0".
+220825-18:04:49,89 nipype.workflow INFO:
+	 [Node] Running "_level1design0" ("nipype.interfaces.fsl.model.Level1Design")
+220825-18:04:49,136 nipype.workflow INFO:
+	 [Node] Finished "_level1design0".
+220825-18:04:49,138 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/level1design/mapflow/_level1design1".
+220825-18:04:49,217 nipype.workflow INFO:
+	 [Node] Running "_level1design1" ("nipype.interfaces.fsl.model.Level1Design")
+220825-18:04:49,266 nipype.workflow INFO:
+	 [Node] Finished "_level1design1".
+220825-18:04:49,267 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/level1design/mapflow/_level1design2".
+220825-18:04:49,325 nipype.workflow INFO:
+	 [Node] Running "_level1design2" ("nipype.interfaces.fsl.model.Level1Design")
+220825-18:04:49,391 nipype.workflow INFO:
+	 [Node] Finished "_level1design2".
+220825-18:04:49,471 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1design".
+220825-18:04:49,471 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen".
+220825-18:04:49,491 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen/mapflow/_modelgen0".
+220825-18:04:49,507 nipype.workflow INFO:
+	 [Node] Running "_modelgen0" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-18:04:49,792 nipype.workflow INFO:
+	 [Node] Finished "_modelgen0".
+220825-18:04:49,793 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen/mapflow/_modelgen1".
+220825-18:04:49,810 nipype.workflow INFO:
+	 [Node] Running "_modelgen1" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-18:04:50,82 nipype.workflow INFO:
+	 [Node] Finished "_modelgen1".
+220825-18:04:50,83 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen/mapflow/_modelgen2".
+220825-18:04:50,97 nipype.workflow INFO:
+	 [Node] Running "_modelgen2" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-18:04:50,376 nipype.workflow INFO:
+	 [Node] Finished "_modelgen2".
+220825-18:04:50,380 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelgen".
+220825-18:04:50,380 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/level1estimate".
+220825-18:04:50,389 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate0" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/level1estimate/mapflow/_level1estimate0".
+220825-18:04:50,396 nipype.workflow INFO:
+	 [Node] Running "_level1estimate0" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen/mapflow/_modelgen0/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth0/sub-013_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen/mapflow/_modelgen0/run0.mat --thr=1000.000000
+220825-18:04:50,420 nipype.interface INFO:
+	 stdout 2022-08-25T18:04:50.420650:Log directory is: results
+220825-18:04:54,530 nipype.interface INFO:
+	 stdout 2022-08-25T18:04:54.530763:paradigm.getDesignMatrix().Nrows()=185
+220825-18:04:54,530 nipype.interface INFO:
+	 stdout 2022-08-25T18:04:54.530763:paradigm.getDesignMatrix().Ncols()=13
+220825-18:04:54,530 nipype.interface INFO:
+	 stdout 2022-08-25T18:04:54.530763:sizeTS=185
+220825-18:04:54,530 nipype.interface INFO:
+	 stdout 2022-08-25T18:04:54.530763:numTS=236715
+220825-18:04:54,616 nipype.interface INFO:
+	 stdout 2022-08-25T18:04:54.616952:Calculating residuals...
+220825-18:05:16,194 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:16.194765:Completed
+220825-18:05:16,195 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:16.194765:Estimating residual autocorrelation...
+220825-18:05:20,546 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:20.546343:Calculating raw AutoCorrs... Completed
+220825-18:05:20,552 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:20.552180:mode = 5765.16
+220825-18:05:20,553 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:20.553537:sig = 1005
+220825-18:05:20,553 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:20.553597:Spatially smoothing auto corr estimates
+220825-18:05:59,60 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:59.060718:............
+220825-18:05:59,60 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:59.060718:Completed
+220825-18:05:59,61 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:59.061182:Tukey M = 13
+220825-18:05:59,85 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:59.085609:Tukey estimates... Completed
+220825-18:05:59,85 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:59.085609:Completed
+220825-18:05:59,85 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:59.085609:Prewhitening and Computing PEs...
+220825-18:05:59,85 nipype.interface INFO:
+	 stdout 2022-08-25T18:05:59.085609:Percentage done:
+220825-18:07:12,702 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:12.702785:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-18:07:12,702 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:12.702785:Saving results... 
+220825-18:07:21,711 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:21.711411:Completed
+220825-18:07:21,822 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate0".
+220825-18:07:21,824 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate1" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/level1estimate/mapflow/_level1estimate1".
+220825-18:07:21,830 nipype.workflow INFO:
+	 [Node] Running "_level1estimate1" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen/mapflow/_modelgen1/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth1/sub-013_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen/mapflow/_modelgen1/run0.mat --thr=1000.000000
+220825-18:07:21,856 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:21.856485:Log directory is: results
+220825-18:07:25,935 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:25.935678:paradigm.getDesignMatrix().Nrows()=185
+220825-18:07:25,935 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:25.935678:paradigm.getDesignMatrix().Ncols()=13
+220825-18:07:25,935 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:25.935678:sizeTS=185
+220825-18:07:25,935 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:25.935678:numTS=232267
+220825-18:07:26,20 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:26.020406:Calculating residuals...
+220825-18:07:47,204 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:47.204127:Completed
+220825-18:07:47,204 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:47.204127:Estimating residual autocorrelation...
+220825-18:07:51,791 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:51.791730:Calculating raw AutoCorrs... Completed
+220825-18:07:51,797 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:51.797468:mode = 5760.96
+220825-18:07:51,798 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:51.798803:sig = 982
+220825-18:07:51,798 nipype.interface INFO:
+	 stdout 2022-08-25T18:07:51.798866:Spatially smoothing auto corr estimates
+220825-18:08:29,883 nipype.interface INFO:
+	 stdout 2022-08-25T18:08:29.883118:............
+220825-18:08:29,883 nipype.interface INFO:
+	 stdout 2022-08-25T18:08:29.883118:Completed
+220825-18:08:29,883 nipype.interface INFO:
+	 stdout 2022-08-25T18:08:29.883496:Tukey M = 13
+220825-18:08:29,909 nipype.interface INFO:
+	 stdout 2022-08-25T18:08:29.909945:Tukey estimates... Completed
+220825-18:08:29,910 nipype.interface INFO:
+	 stdout 2022-08-25T18:08:29.909945:Completed
+220825-18:08:29,910 nipype.interface INFO:
+	 stdout 2022-08-25T18:08:29.909945:Prewhitening and Computing PEs...
+220825-18:08:29,910 nipype.interface INFO:
+	 stdout 2022-08-25T18:08:29.909945:Percentage done:
+220825-18:09:42,392 nipype.interface INFO:
+	 stdout 2022-08-25T18:09:42.392351:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-18:09:42,392 nipype.interface INFO:
+	 stdout 2022-08-25T18:09:42.392351:Saving results... 
+220825-18:09:51,207 nipype.interface INFO:
+	 stdout 2022-08-25T18:09:51.206984:Completed
+220825-18:09:51,322 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate1".
+220825-18:09:51,325 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate2" in "/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/level1estimate/mapflow/_level1estimate2".
+220825-18:09:51,331 nipype.workflow INFO:
+	 [Node] Running "_level1estimate2" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen/mapflow/_modelgen2/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_013/smooth/mapflow/_smooth2/sub-013_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_013/_roi_Thal/modelgen/mapflow/_modelgen2/run0.mat --thr=1000.000000
+220825-18:09:51,354 nipype.interface INFO:
+	 stdout 2022-08-25T18:09:51.354243:Log directory is: results
+220825-18:09:55,458 nipype.interface INFO:
+	 stdout 2022-08-25T18:09:55.458224:paradigm.getDesignMatrix().Nrows()=185
+220825-18:09:55,458 nipype.interface INFO:
+	 stdout 2022-08-25T18:09:55.458224:paradigm.getDesignMatrix().Ncols()=13
+220825-18:09:55,458 nipype.interface INFO:
+	 stdout 2022-08-25T18:09:55.458224:sizeTS=185
+220825-18:09:55,458 nipype.interface INFO:
+	 stdout 2022-08-25T18:09:55.458224:numTS=235718
+220825-18:09:55,544 nipype.interface INFO:
+	 stdout 2022-08-25T18:09:55.544699:Calculating residuals...
+220825-18:10:17,118 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:17.118534:Completed
+220825-18:10:17,118 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:17.118534:Estimating residual autocorrelation...
+220825-18:10:21,468 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:21.468363:Calculating raw AutoCorrs... Completed
+220825-18:10:21,475 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:21.475116:mode = 5838.16
+220825-18:10:21,476 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:21.476449:sig = 940
+220825-18:10:21,476 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:21.476511:Spatially smoothing auto corr estimates
+220825-18:10:59,534 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:59.534934:............
+220825-18:10:59,535 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:59.534934:Completed
+220825-18:10:59,535 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:59.535289:Tukey M = 13
+220825-18:10:59,559 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:59.559548:Tukey estimates... Completed
+220825-18:10:59,559 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:59.559548:Completed
+220825-18:10:59,559 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:59.559548:Prewhitening and Computing PEs...
+220825-18:10:59,559 nipype.interface INFO:
+	 stdout 2022-08-25T18:10:59.559548:Percentage done:
+220825-18:12:12,533 nipype.interface INFO:
+	 stdout 2022-08-25T18:12:12.533180:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-18:12:12,533 nipype.interface INFO:
+	 stdout 2022-08-25T18:12:12.533180:Saving results... 
+220825-18:12:21,423 nipype.interface INFO:
+	 stdout 2022-08-25T18:12:21.423381:Completed
+220825-18:12:21,530 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate2".
+220825-18:12:21,534 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1estimate".
+Thu 25 Aug 2022 11:12:22 AM PDT

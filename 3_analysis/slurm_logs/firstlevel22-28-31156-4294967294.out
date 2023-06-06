@@ -1,0 +1,1008 @@
+/home/pw/projects/thesis/code/nipype_glm
+Running job on: babbage
+Wed 24 Aug 2022 05:07:56 PM PDT
+Running level 1 nipype script
+Some packages in this Docker container are non-free
+If you are considering commercial use of this container, please consult the relevant license:
+https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Licence
+Running code as:  pw
+[Errno 17] File exists: '/home/pw/projects/thesis/out/'
+Running data from /home/pw/projects/thesis/data/
+220825-00:09:21,748 nipype.workflow INFO:
+	 Generated workflow graph: /home/pw/projects/thesis/out/workflow/modelfit_final_detailed.png (graph2use=exec, simple_form=False).
+220825-00:09:23,150 nipype.workflow INFO:
+	 Workflow workflow settings: ['check', 'execution', 'logging', 'monitoring']
+220825-00:09:23,810 nipype.workflow INFO:
+	 Running serially.
+220825-00:09:23,816 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.dg" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/dg".
+220825-00:09:23,867 nipype.workflow INFO:
+	 [Node] Running "dg" ("nipype.interfaces.io.DataGrabber")
+220825-00:09:23,886 nipype.workflow INFO:
+	 [Node] Finished "workflow.dg".
+220825-00:09:23,887 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.apply_mask" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask".
+220825-00:09:23,942 nipype.workflow INFO:
+	 [Node] Setting-up "_apply_mask0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask/mapflow/_apply_mask0".
+220825-00:09:23,954 nipype.workflow INFO:
+	 [Node] Running "_apply_mask0" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /home/pw/projects/thesis/data/bids/derivatives/sub-034/func/sub-034_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz -mas /home/pw/projects/thesis/data/bids/derivatives/sub-034/func/sub-034_task-game_run-1_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz /home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask/mapflow/_apply_mask0/sub-034_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked.nii.gz
+220825-00:09:49,921 nipype.workflow INFO:
+	 [Node] Finished "_apply_mask0".
+220825-00:09:49,924 nipype.workflow INFO:
+	 [Node] Setting-up "_apply_mask1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask/mapflow/_apply_mask1".
+220825-00:09:49,958 nipype.workflow INFO:
+	 [Node] Running "_apply_mask1" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /home/pw/projects/thesis/data/bids/derivatives/sub-034/func/sub-034_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz -mas /home/pw/projects/thesis/data/bids/derivatives/sub-034/func/sub-034_task-game_run-2_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz /home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask/mapflow/_apply_mask1/sub-034_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked.nii.gz
+220825-00:10:16,695 nipype.workflow INFO:
+	 [Node] Finished "_apply_mask1".
+220825-00:10:16,698 nipype.workflow INFO:
+	 [Node] Setting-up "_apply_mask2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask/mapflow/_apply_mask2".
+220825-00:10:16,708 nipype.workflow INFO:
+	 [Node] Running "_apply_mask2" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /home/pw/projects/thesis/data/bids/derivatives/sub-034/func/sub-034_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz -mas /home/pw/projects/thesis/data/bids/derivatives/sub-034/func/sub-034_task-game_run-3_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz /home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask/mapflow/_apply_mask2/sub-034_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked.nii.gz
+220825-00:10:42,334 nipype.workflow INFO:
+	 [Node] Finished "_apply_mask2".
+220825-00:10:42,342 nipype.workflow INFO:
+	 [Node] Finished "workflow.apply_mask".
+220825-00:10:42,343 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.smooth" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth".
+220825-00:10:42,392 nipype.workflow INFO:
+	 [Node] Setting-up "_smooth0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth0".
+220825-00:10:42,407 nipype.workflow INFO:
+	 [Node] Running "_smooth0" ("nipype.interfaces.fsl.preprocess.SUSAN"), a CommandLine Interface with command:
+susan /home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask/mapflow/_apply_mask0/sub-034_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked.nii.gz 2000.0000000000 4.2466090014 3 1 0 /home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth0/sub-034_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz
+220825-00:32:52,56 nipype.workflow INFO:
+	 [Node] Finished "_smooth0".
+220825-00:32:52,59 nipype.workflow INFO:
+	 [Node] Setting-up "_smooth1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth1".
+220825-00:32:52,87 nipype.workflow INFO:
+	 [Node] Running "_smooth1" ("nipype.interfaces.fsl.preprocess.SUSAN"), a CommandLine Interface with command:
+susan /home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask/mapflow/_apply_mask1/sub-034_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked.nii.gz 2000.0000000000 4.2466090014 3 1 0 /home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth1/sub-034_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz
+220825-00:55:07,518 nipype.workflow INFO:
+	 [Node] Finished "_smooth1".
+220825-00:55:07,521 nipype.workflow INFO:
+	 [Node] Setting-up "_smooth2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth2".
+220825-00:55:07,532 nipype.workflow INFO:
+	 [Node] Running "_smooth2" ("nipype.interfaces.fsl.preprocess.SUSAN"), a CommandLine Interface with command:
+susan /home/pw/projects/thesis/out/workflow/_subject_id_034/apply_mask/mapflow/_apply_mask2/sub-034_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked.nii.gz 2000.0000000000 4.2466090014 3 1 0 /home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth2/sub-034_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz
+220825-01:17:09,105 nipype.workflow INFO:
+	 [Node] Finished "_smooth2".
+220825-01:17:09,110 nipype.workflow INFO:
+	 [Node] Finished "workflow.smooth".
+220825-01:17:09,111 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.seedmask" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/seedmask".
+220825-01:17:09,124 nipype.workflow INFO:
+	 [Node] Setting-up "_seedmask0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/seedmask/mapflow/_seedmask0".
+220825-01:17:09,131 nipype.workflow INFO:
+	 [Node] Running "_seedmask0" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:17:48,496 nipype.workflow INFO:
+	 [Node] Finished "_seedmask0".
+220825-01:17:48,498 nipype.workflow INFO:
+	 [Node] Setting-up "_seedmask1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/seedmask/mapflow/_seedmask1".
+220825-01:17:48,506 nipype.workflow INFO:
+	 [Node] Running "_seedmask1" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:18:26,632 nipype.workflow INFO:
+	 [Node] Finished "_seedmask1".
+220825-01:18:26,635 nipype.workflow INFO:
+	 [Node] Setting-up "_seedmask2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/seedmask/mapflow/_seedmask2".
+220825-01:18:26,643 nipype.workflow INFO:
+	 [Node] Running "_seedmask2" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:19:05,939 nipype.workflow INFO:
+	 [Node] Finished "_seedmask2".
+220825-01:19:05,949 nipype.workflow INFO:
+	 [Node] Finished "workflow.seedmask".
+220825-01:19:05,950 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/get_predictors".
+220825-01:19:05,986 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/get_predictors/mapflow/_get_predictors0".
+220825-01:19:06,1 nipype.workflow INFO:
+	 [Node] Running "_get_predictors0" ("nipype.interfaces.utility.wrappers.Function")
+/home/pw/.local/lib/python3.7/site-packages/nilearn/glm/__init__.py:56: FutureWarning: The nilearn.glm module is experimental. It may change in any future release of Nilearn.
+  'It may change in any future release of Nilearn.', FutureWarning)
+220825-01:19:06,510 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors0".
+220825-01:19:06,512 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/get_predictors/mapflow/_get_predictors1".
+220825-01:19:06,528 nipype.workflow INFO:
+	 [Node] Running "_get_predictors1" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:19:06,629 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors1".
+220825-01:19:06,632 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/get_predictors/mapflow/_get_predictors2".
+220825-01:19:06,646 nipype.workflow INFO:
+	 [Node] Running "_get_predictors2" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:19:06,761 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors2".
+220825-01:19:06,893 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_predictors".
+220825-01:19:06,893 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/get_subjinfo".
+220825-01:19:07,504 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/get_subjinfo/mapflow/_get_subjinfo0".
+220825-01:19:07,637 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo0" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:19:07,736 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo0".
+220825-01:19:07,738 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/get_subjinfo/mapflow/_get_subjinfo1".
+220825-01:19:07,869 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo1" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:19:07,968 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo1".
+220825-01:19:07,970 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/get_subjinfo/mapflow/_get_subjinfo2".
+220825-01:19:08,101 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo2" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:19:08,199 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo2".
+220825-01:19:08,479 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_subjinfo".
+220825-01:19:08,480 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelspec".
+220825-01:19:08,688 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelspec/mapflow/_modelspec0".
+220825-01:19:08,731 nipype.workflow INFO:
+	 [Node] Running "_modelspec0" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-01:19:08,866 nipype.workflow INFO:
+	 [Node] Finished "_modelspec0".
+220825-01:19:08,876 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelspec/mapflow/_modelspec1".
+220825-01:19:08,921 nipype.workflow INFO:
+	 [Node] Running "_modelspec1" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-01:19:09,36 nipype.workflow INFO:
+	 [Node] Finished "_modelspec1".
+220825-01:19:09,46 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelspec/mapflow/_modelspec2".
+220825-01:19:09,88 nipype.workflow INFO:
+	 [Node] Running "_modelspec2" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-01:19:09,203 nipype.workflow INFO:
+	 [Node] Finished "_modelspec2".
+220825-01:19:09,488 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelspec".
+220825-01:19:09,488 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/level1design".
+220825-01:19:10,153 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/level1design/mapflow/_level1design0".
+220825-01:19:10,361 nipype.workflow INFO:
+	 [Node] Running "_level1design0" ("nipype.interfaces.fsl.model.Level1Design")
+220825-01:19:10,537 nipype.workflow INFO:
+	 [Node] Finished "_level1design0".
+220825-01:19:10,540 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/level1design/mapflow/_level1design1".
+220825-01:19:10,718 nipype.workflow INFO:
+	 [Node] Running "_level1design1" ("nipype.interfaces.fsl.model.Level1Design")
+220825-01:19:10,826 nipype.workflow INFO:
+	 [Node] Finished "_level1design1".
+220825-01:19:10,829 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/level1design/mapflow/_level1design2".
+220825-01:19:11,9 nipype.workflow INFO:
+	 [Node] Running "_level1design2" ("nipype.interfaces.fsl.model.Level1Design")
+220825-01:19:11,116 nipype.workflow INFO:
+	 [Node] Finished "_level1design2".
+220825-01:19:11,338 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1design".
+220825-01:19:11,338 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen".
+220825-01:19:11,368 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen/mapflow/_modelgen0".
+220825-01:19:11,393 nipype.workflow INFO:
+	 [Node] Running "_modelgen0" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-01:19:12,208 nipype.workflow INFO:
+	 [Node] Finished "_modelgen0".
+220825-01:19:12,211 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen/mapflow/_modelgen1".
+220825-01:19:12,239 nipype.workflow INFO:
+	 [Node] Running "_modelgen1" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-01:19:12,764 nipype.workflow INFO:
+	 [Node] Finished "_modelgen1".
+220825-01:19:12,767 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen/mapflow/_modelgen2".
+220825-01:19:12,799 nipype.workflow INFO:
+	 [Node] Running "_modelgen2" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-01:19:13,324 nipype.workflow INFO:
+	 [Node] Finished "_modelgen2".
+220825-01:19:13,331 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelgen".
+220825-01:19:13,331 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/level1estimate".
+220825-01:19:13,350 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/level1estimate/mapflow/_level1estimate0".
+220825-01:19:13,361 nipype.workflow INFO:
+	 [Node] Running "_level1estimate0" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen/mapflow/_modelgen0/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth0/sub-034_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen/mapflow/_modelgen0/run0.mat --thr=1000.000000
+220825-01:19:13,541 nipype.interface INFO:
+	 stdout 2022-08-25T01:19:13.541232:Log directory is: results
+220825-01:19:25,968 nipype.interface INFO:
+	 stdout 2022-08-25T01:19:25.967970:paradigm.getDesignMatrix().Nrows()=185
+220825-01:19:25,968 nipype.interface INFO:
+	 stdout 2022-08-25T01:19:25.967970:paradigm.getDesignMatrix().Ncols()=13
+220825-01:19:25,968 nipype.interface INFO:
+	 stdout 2022-08-25T01:19:25.967970:sizeTS=185
+220825-01:19:25,968 nipype.interface INFO:
+	 stdout 2022-08-25T01:19:25.967970:numTS=229354
+220825-01:19:26,210 nipype.interface INFO:
+	 stdout 2022-08-25T01:19:26.210833:Calculating residuals...
+220825-01:20:24,940 nipype.interface INFO:
+	 stdout 2022-08-25T01:20:24.940447:Completed
+220825-01:20:24,940 nipype.interface INFO:
+	 stdout 2022-08-25T01:20:24.940447:Estimating residual autocorrelation...
+220825-01:20:41,996 nipype.interface INFO:
+	 stdout 2022-08-25T01:20:41.996528:Calculating raw AutoCorrs... Completed
+220825-01:20:42,24 nipype.interface INFO:
+	 stdout 2022-08-25T01:20:42.024411:mode = 7135.2
+220825-01:20:42,29 nipype.interface INFO:
+	 stdout 2022-08-25T01:20:42.029122:sig = 1072
+220825-01:20:42,29 nipype.interface INFO:
+	 stdout 2022-08-25T01:20:42.029274:Spatially smoothing auto corr estimates
+220825-01:22:39,450 nipype.interface INFO:
+	 stdout 2022-08-25T01:22:39.450339:............
+220825-01:22:39,450 nipype.interface INFO:
+	 stdout 2022-08-25T01:22:39.450339:Completed
+220825-01:22:39,450 nipype.interface INFO:
+	 stdout 2022-08-25T01:22:39.450821:Tukey M = 13
+220825-01:22:39,540 nipype.interface INFO:
+	 stdout 2022-08-25T01:22:39.540205:Tukey estimates... Completed
+220825-01:22:39,540 nipype.interface INFO:
+	 stdout 2022-08-25T01:22:39.540205:Completed
+220825-01:22:39,540 nipype.interface INFO:
+	 stdout 2022-08-25T01:22:39.540205:Prewhitening and Computing PEs...
+220825-01:22:39,540 nipype.interface INFO:
+	 stdout 2022-08-25T01:22:39.540205:Percentage done:
+220825-01:26:53,858 nipype.interface INFO:
+	 stdout 2022-08-25T01:26:53.858648:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-01:26:53,859 nipype.interface INFO:
+	 stdout 2022-08-25T01:26:53.858648:Saving results... 
+220825-01:27:18,170 nipype.interface INFO:
+	 stdout 2022-08-25T01:27:18.169945:Completed
+220825-01:27:18,347 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate0".
+220825-01:27:18,352 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/level1estimate/mapflow/_level1estimate1".
+220825-01:27:18,361 nipype.workflow INFO:
+	 [Node] Running "_level1estimate1" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen/mapflow/_modelgen1/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth1/sub-034_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen/mapflow/_modelgen1/run0.mat --thr=1000.000000
+220825-01:27:18,403 nipype.interface INFO:
+	 stdout 2022-08-25T01:27:18.403394:Log directory is: results
+220825-01:27:30,887 nipype.interface INFO:
+	 stdout 2022-08-25T01:27:30.887467:paradigm.getDesignMatrix().Nrows()=185
+220825-01:27:30,887 nipype.interface INFO:
+	 stdout 2022-08-25T01:27:30.887467:paradigm.getDesignMatrix().Ncols()=13
+220825-01:27:30,887 nipype.interface INFO:
+	 stdout 2022-08-25T01:27:30.887467:sizeTS=185
+220825-01:27:30,887 nipype.interface INFO:
+	 stdout 2022-08-25T01:27:30.887467:numTS=229636
+220825-01:27:31,106 nipype.interface INFO:
+	 stdout 2022-08-25T01:27:31.106678:Calculating residuals...
+220825-01:28:28,715 nipype.interface INFO:
+	 stdout 2022-08-25T01:28:28.715902:Completed
+220825-01:28:28,716 nipype.interface INFO:
+	 stdout 2022-08-25T01:28:28.715902:Estimating residual autocorrelation...
+220825-01:28:45,605 nipype.interface INFO:
+	 stdout 2022-08-25T01:28:45.605358:Calculating raw AutoCorrs... Completed
+220825-01:28:45,630 nipype.interface INFO:
+	 stdout 2022-08-25T01:28:45.630627:mode = 7263.53
+220825-01:28:45,635 nipype.interface INFO:
+	 stdout 2022-08-25T01:28:45.635004:sig = 998
+220825-01:28:45,635 nipype.interface INFO:
+	 stdout 2022-08-25T01:28:45.635176:Spatially smoothing auto corr estimates
+220825-01:30:42,772 nipype.interface INFO:
+	 stdout 2022-08-25T01:30:42.772885:............
+220825-01:30:42,773 nipype.interface INFO:
+	 stdout 2022-08-25T01:30:42.772885:Completed
+220825-01:30:42,773 nipype.interface INFO:
+	 stdout 2022-08-25T01:30:42.773319:Tukey M = 13
+220825-01:30:42,863 nipype.interface INFO:
+	 stdout 2022-08-25T01:30:42.863321:Tukey estimates... Completed
+220825-01:30:42,863 nipype.interface INFO:
+	 stdout 2022-08-25T01:30:42.863321:Completed
+220825-01:30:42,863 nipype.interface INFO:
+	 stdout 2022-08-25T01:30:42.863321:Prewhitening and Computing PEs...
+220825-01:30:42,863 nipype.interface INFO:
+	 stdout 2022-08-25T01:30:42.863321:Percentage done:
+220825-01:34:58,867 nipype.interface INFO:
+	 stdout 2022-08-25T01:34:58.867520:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-01:34:58,868 nipype.interface INFO:
+	 stdout 2022-08-25T01:34:58.867520:Saving results... 
+220825-01:35:22,858 nipype.interface INFO:
+	 stdout 2022-08-25T01:35:22.857992:Completed
+220825-01:35:23,37 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate1".
+220825-01:35:23,43 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/level1estimate/mapflow/_level1estimate2".
+220825-01:35:23,54 nipype.workflow INFO:
+	 [Node] Running "_level1estimate2" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen/mapflow/_modelgen2/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth2/sub-034_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_ACC/modelgen/mapflow/_modelgen2/run0.mat --thr=1000.000000
+220825-01:35:23,98 nipype.interface INFO:
+	 stdout 2022-08-25T01:35:23.097956:Log directory is: results
+220825-01:35:35,257 nipype.interface INFO:
+	 stdout 2022-08-25T01:35:35.257477:paradigm.getDesignMatrix().Nrows()=185
+220825-01:35:35,257 nipype.interface INFO:
+	 stdout 2022-08-25T01:35:35.257477:paradigm.getDesignMatrix().Ncols()=13
+220825-01:35:35,257 nipype.interface INFO:
+	 stdout 2022-08-25T01:35:35.257477:sizeTS=185
+220825-01:35:35,257 nipype.interface INFO:
+	 stdout 2022-08-25T01:35:35.257477:numTS=228999
+220825-01:35:35,472 nipype.interface INFO:
+	 stdout 2022-08-25T01:35:35.472324:Calculating residuals...
+220825-01:36:32,815 nipype.interface INFO:
+	 stdout 2022-08-25T01:36:32.815873:Completed
+220825-01:36:32,816 nipype.interface INFO:
+	 stdout 2022-08-25T01:36:32.815873:Estimating residual autocorrelation...
+220825-01:36:49,379 nipype.interface INFO:
+	 stdout 2022-08-25T01:36:49.379607:Calculating raw AutoCorrs... Completed
+220825-01:36:49,406 nipype.interface INFO:
+	 stdout 2022-08-25T01:36:49.405953:mode = 7230.74
+220825-01:36:49,410 nipype.interface INFO:
+	 stdout 2022-08-25T01:36:49.410463:sig = 1004
+220825-01:36:49,410 nipype.interface INFO:
+	 stdout 2022-08-25T01:36:49.410621:Spatially smoothing auto corr estimates
+220825-01:38:46,468 nipype.interface INFO:
+	 stdout 2022-08-25T01:38:46.468527:............
+220825-01:38:46,468 nipype.interface INFO:
+	 stdout 2022-08-25T01:38:46.468527:Completed
+220825-01:38:46,469 nipype.interface INFO:
+	 stdout 2022-08-25T01:38:46.469199:Tukey M = 13
+220825-01:38:46,558 nipype.interface INFO:
+	 stdout 2022-08-25T01:38:46.557902:Tukey estimates... Completed
+220825-01:38:46,558 nipype.interface INFO:
+	 stdout 2022-08-25T01:38:46.557902:Completed
+220825-01:38:46,558 nipype.interface INFO:
+	 stdout 2022-08-25T01:38:46.557902:Prewhitening and Computing PEs...
+220825-01:38:46,558 nipype.interface INFO:
+	 stdout 2022-08-25T01:38:46.557902:Percentage done:
+220825-01:43:04,545 nipype.interface INFO:
+	 stdout 2022-08-25T01:43:04.545060:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-01:43:04,545 nipype.interface INFO:
+	 stdout 2022-08-25T01:43:04.545060:Saving results... 
+220825-01:43:27,803 nipype.interface INFO:
+	 stdout 2022-08-25T01:43:27.803869:Completed
+220825-01:43:27,979 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate2".
+220825-01:43:27,990 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1estimate".
+220825-01:43:27,991 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/get_predictors".
+220825-01:43:28,29 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/get_predictors/mapflow/_get_predictors0".
+220825-01:43:28,45 nipype.workflow INFO:
+	 [Node] Running "_get_predictors0" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:43:28,144 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors0".
+220825-01:43:28,146 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/get_predictors/mapflow/_get_predictors1".
+220825-01:43:28,161 nipype.workflow INFO:
+	 [Node] Running "_get_predictors1" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:43:28,250 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors1".
+220825-01:43:28,252 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/get_predictors/mapflow/_get_predictors2".
+220825-01:43:28,267 nipype.workflow INFO:
+	 [Node] Running "_get_predictors2" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:43:28,376 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors2".
+220825-01:43:28,517 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_predictors".
+220825-01:43:28,517 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/get_subjinfo".
+220825-01:43:29,138 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/get_subjinfo/mapflow/_get_subjinfo0".
+220825-01:43:29,269 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo0" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:43:29,369 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo0".
+220825-01:43:29,371 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/get_subjinfo/mapflow/_get_subjinfo1".
+220825-01:43:29,503 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo1" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:43:29,610 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo1".
+220825-01:43:29,613 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/get_subjinfo/mapflow/_get_subjinfo2".
+220825-01:43:29,745 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo2" ("nipype.interfaces.utility.wrappers.Function")
+220825-01:43:29,843 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo2".
+220825-01:43:30,126 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_subjinfo".
+220825-01:43:30,127 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelspec".
+220825-01:43:30,304 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelspec/mapflow/_modelspec0".
+220825-01:43:30,345 nipype.workflow INFO:
+	 [Node] Running "_modelspec0" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-01:43:30,461 nipype.workflow INFO:
+	 [Node] Finished "_modelspec0".
+220825-01:43:30,471 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelspec/mapflow/_modelspec1".
+220825-01:43:30,522 nipype.workflow INFO:
+	 [Node] Running "_modelspec1" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-01:43:30,637 nipype.workflow INFO:
+	 [Node] Finished "_modelspec1".
+220825-01:43:30,647 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelspec/mapflow/_modelspec2".
+220825-01:43:30,707 nipype.workflow INFO:
+	 [Node] Running "_modelspec2" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-01:43:30,825 nipype.workflow INFO:
+	 [Node] Finished "_modelspec2".
+220825-01:43:31,24 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelspec".
+220825-01:43:31,25 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/level1design".
+220825-01:43:31,696 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/level1design/mapflow/_level1design0".
+220825-01:43:31,878 nipype.workflow INFO:
+	 [Node] Running "_level1design0" ("nipype.interfaces.fsl.model.Level1Design")
+220825-01:43:32,10 nipype.workflow INFO:
+	 [Node] Finished "_level1design0".
+220825-01:43:32,13 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/level1design/mapflow/_level1design1".
+220825-01:43:32,196 nipype.workflow INFO:
+	 [Node] Running "_level1design1" ("nipype.interfaces.fsl.model.Level1Design")
+220825-01:43:32,318 nipype.workflow INFO:
+	 [Node] Finished "_level1design1".
+220825-01:43:32,321 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/level1design/mapflow/_level1design2".
+220825-01:43:32,513 nipype.workflow INFO:
+	 [Node] Running "_level1design2" ("nipype.interfaces.fsl.model.Level1Design")
+220825-01:43:32,652 nipype.workflow INFO:
+	 [Node] Finished "_level1design2".
+220825-01:43:32,840 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1design".
+220825-01:43:32,840 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen".
+220825-01:43:32,870 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen/mapflow/_modelgen0".
+220825-01:43:32,899 nipype.workflow INFO:
+	 [Node] Running "_modelgen0" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-01:43:33,454 nipype.workflow INFO:
+	 [Node] Finished "_modelgen0".
+220825-01:43:33,457 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen/mapflow/_modelgen1".
+220825-01:43:33,483 nipype.workflow INFO:
+	 [Node] Running "_modelgen1" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-01:43:34,20 nipype.workflow INFO:
+	 [Node] Finished "_modelgen1".
+220825-01:43:34,24 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen/mapflow/_modelgen2".
+220825-01:43:34,83 nipype.workflow INFO:
+	 [Node] Running "_modelgen2" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-01:43:34,601 nipype.workflow INFO:
+	 [Node] Finished "_modelgen2".
+220825-01:43:34,608 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelgen".
+220825-01:43:34,608 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/level1estimate".
+220825-01:43:34,627 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/level1estimate/mapflow/_level1estimate0".
+220825-01:43:34,653 nipype.workflow INFO:
+	 [Node] Running "_level1estimate0" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen/mapflow/_modelgen0/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth0/sub-034_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen/mapflow/_modelgen0/run0.mat --thr=1000.000000
+220825-01:43:34,695 nipype.interface INFO:
+	 stdout 2022-08-25T01:43:34.695303:Log directory is: results
+220825-01:43:45,877 nipype.interface INFO:
+	 stdout 2022-08-25T01:43:45.876930:paradigm.getDesignMatrix().Nrows()=185
+220825-01:43:45,877 nipype.interface INFO:
+	 stdout 2022-08-25T01:43:45.876930:paradigm.getDesignMatrix().Ncols()=13
+220825-01:43:45,877 nipype.interface INFO:
+	 stdout 2022-08-25T01:43:45.876930:sizeTS=185
+220825-01:43:45,877 nipype.interface INFO:
+	 stdout 2022-08-25T01:43:45.876930:numTS=229354
+220825-01:43:46,91 nipype.interface INFO:
+	 stdout 2022-08-25T01:43:46.091349:Calculating residuals...
+220825-01:44:43,853 nipype.interface INFO:
+	 stdout 2022-08-25T01:44:43.853400:Completed
+220825-01:44:43,853 nipype.interface INFO:
+	 stdout 2022-08-25T01:44:43.853400:Estimating residual autocorrelation...
+220825-01:45:00,458 nipype.interface INFO:
+	 stdout 2022-08-25T01:45:00.458788:Calculating raw AutoCorrs... Completed
+220825-01:45:00,484 nipype.interface INFO:
+	 stdout 2022-08-25T01:45:00.484068:mode = 7135.2
+220825-01:45:00,488 nipype.interface INFO:
+	 stdout 2022-08-25T01:45:00.488778:sig = 1072
+220825-01:45:00,488 nipype.interface INFO:
+	 stdout 2022-08-25T01:45:00.488930:Spatially smoothing auto corr estimates
+220825-01:46:58,797 nipype.interface INFO:
+	 stdout 2022-08-25T01:46:58.797365:............
+220825-01:46:58,797 nipype.interface INFO:
+	 stdout 2022-08-25T01:46:58.797365:Completed
+220825-01:46:58,798 nipype.interface INFO:
+	 stdout 2022-08-25T01:46:58.797963:Tukey M = 13
+220825-01:46:58,887 nipype.interface INFO:
+	 stdout 2022-08-25T01:46:58.887517:Tukey estimates... Completed
+220825-01:46:58,887 nipype.interface INFO:
+	 stdout 2022-08-25T01:46:58.887517:Completed
+220825-01:46:58,887 nipype.interface INFO:
+	 stdout 2022-08-25T01:46:58.887517:Prewhitening and Computing PEs...
+220825-01:46:58,888 nipype.interface INFO:
+	 stdout 2022-08-25T01:46:58.887517:Percentage done:
+220825-01:51:17,527 nipype.interface INFO:
+	 stdout 2022-08-25T01:51:17.527296:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-01:51:17,527 nipype.interface INFO:
+	 stdout 2022-08-25T01:51:17.527296:Saving results... 
+220825-01:51:41,210 nipype.interface INFO:
+	 stdout 2022-08-25T01:51:41.210694:Completed
+220825-01:51:41,376 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate0".
+220825-01:51:41,383 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/level1estimate/mapflow/_level1estimate1".
+220825-01:51:41,392 nipype.workflow INFO:
+	 [Node] Running "_level1estimate1" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen/mapflow/_modelgen1/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth1/sub-034_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen/mapflow/_modelgen1/run0.mat --thr=1000.000000
+220825-01:51:41,435 nipype.interface INFO:
+	 stdout 2022-08-25T01:51:41.435242:Log directory is: results
+220825-01:51:52,588 nipype.interface INFO:
+	 stdout 2022-08-25T01:51:52.588157:paradigm.getDesignMatrix().Nrows()=185
+220825-01:51:52,588 nipype.interface INFO:
+	 stdout 2022-08-25T01:51:52.588157:paradigm.getDesignMatrix().Ncols()=13
+220825-01:51:52,588 nipype.interface INFO:
+	 stdout 2022-08-25T01:51:52.588157:sizeTS=185
+220825-01:51:52,588 nipype.interface INFO:
+	 stdout 2022-08-25T01:51:52.588157:numTS=229636
+220825-01:51:52,802 nipype.interface INFO:
+	 stdout 2022-08-25T01:51:52.802306:Calculating residuals...
+220825-01:52:50,544 nipype.interface INFO:
+	 stdout 2022-08-25T01:52:50.544739:Completed
+220825-01:52:50,545 nipype.interface INFO:
+	 stdout 2022-08-25T01:52:50.544739:Estimating residual autocorrelation...
+220825-01:53:07,192 nipype.interface INFO:
+	 stdout 2022-08-25T01:53:07.192393:Calculating raw AutoCorrs... Completed
+220825-01:53:07,218 nipype.interface INFO:
+	 stdout 2022-08-25T01:53:07.218481:mode = 7263.53
+220825-01:53:07,222 nipype.interface INFO:
+	 stdout 2022-08-25T01:53:07.222849:sig = 998
+220825-01:53:07,223 nipype.interface INFO:
+	 stdout 2022-08-25T01:53:07.223011:Spatially smoothing auto corr estimates
+220825-01:55:05,113 nipype.interface INFO:
+	 stdout 2022-08-25T01:55:05.113526:............
+220825-01:55:05,114 nipype.interface INFO:
+	 stdout 2022-08-25T01:55:05.113526:Completed
+220825-01:55:05,114 nipype.interface INFO:
+	 stdout 2022-08-25T01:55:05.114170:Tukey M = 13
+220825-01:55:05,203 nipype.interface INFO:
+	 stdout 2022-08-25T01:55:05.202911:Tukey estimates... Completed
+220825-01:55:05,203 nipype.interface INFO:
+	 stdout 2022-08-25T01:55:05.202911:Completed
+220825-01:55:05,203 nipype.interface INFO:
+	 stdout 2022-08-25T01:55:05.202911:Prewhitening and Computing PEs...
+220825-01:55:05,203 nipype.interface INFO:
+	 stdout 2022-08-25T01:55:05.202911:Percentage done:
+220825-01:59:22,323 nipype.interface INFO:
+	 stdout 2022-08-25T01:59:22.323352:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-01:59:22,323 nipype.interface INFO:
+	 stdout 2022-08-25T01:59:22.323352:Saving results... 
+220825-01:59:45,841 nipype.interface INFO:
+	 stdout 2022-08-25T01:59:45.841104:Completed
+220825-01:59:46,258 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate1".
+220825-01:59:46,264 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/level1estimate/mapflow/_level1estimate2".
+220825-01:59:46,274 nipype.workflow INFO:
+	 [Node] Running "_level1estimate2" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen/mapflow/_modelgen2/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth2/sub-034_task-game_run-3_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_MFG/modelgen/mapflow/_modelgen2/run0.mat --thr=1000.000000
+220825-01:59:46,359 nipype.interface INFO:
+	 stdout 2022-08-25T01:59:46.359751:Log directory is: results
+220825-01:59:58,915 nipype.interface INFO:
+	 stdout 2022-08-25T01:59:58.915504:paradigm.getDesignMatrix().Nrows()=185
+220825-01:59:58,915 nipype.interface INFO:
+	 stdout 2022-08-25T01:59:58.915504:paradigm.getDesignMatrix().Ncols()=13
+220825-01:59:58,915 nipype.interface INFO:
+	 stdout 2022-08-25T01:59:58.915504:sizeTS=185
+220825-01:59:58,916 nipype.interface INFO:
+	 stdout 2022-08-25T01:59:58.915504:numTS=228999
+220825-01:59:59,138 nipype.interface INFO:
+	 stdout 2022-08-25T01:59:59.138762:Calculating residuals...
+220825-02:00:56,367 nipype.interface INFO:
+	 stdout 2022-08-25T02:00:56.367358:Completed
+220825-02:00:56,367 nipype.interface INFO:
+	 stdout 2022-08-25T02:00:56.367358:Estimating residual autocorrelation...
+220825-02:01:12,717 nipype.interface INFO:
+	 stdout 2022-08-25T02:01:12.717813:Calculating raw AutoCorrs... Completed
+220825-02:01:12,743 nipype.interface INFO:
+	 stdout 2022-08-25T02:01:12.743282:mode = 7230.74
+220825-02:01:12,747 nipype.interface INFO:
+	 stdout 2022-08-25T02:01:12.747900:sig = 1004
+220825-02:01:12,748 nipype.interface INFO:
+	 stdout 2022-08-25T02:01:12.748026:Spatially smoothing auto corr estimates
+220825-02:03:09,751 nipype.interface INFO:
+	 stdout 2022-08-25T02:03:09.751822:............
+220825-02:03:09,752 nipype.interface INFO:
+	 stdout 2022-08-25T02:03:09.751822:Completed
+220825-02:03:09,752 nipype.interface INFO:
+	 stdout 2022-08-25T02:03:09.752238:Tukey M = 13
+220825-02:03:09,842 nipype.interface INFO:
+	 stdout 2022-08-25T02:03:09.842014:Tukey estimates... Completed
+220825-02:03:09,842 nipype.interface INFO:
+	 stdout 2022-08-25T02:03:09.842014:Completed
+220825-02:03:09,842 nipype.interface INFO:
+	 stdout 2022-08-25T02:03:09.842014:Prewhitening and Computing PEs...
+220825-02:03:09,842 nipype.interface INFO:
+	 stdout 2022-08-25T02:03:09.842014:Percentage done:
+220825-02:07:25,274 nipype.interface INFO:
+	 stdout 2022-08-25T02:07:25.274031:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-02:07:25,274 nipype.interface INFO:
+	 stdout 2022-08-25T02:07:25.274031:Saving results... 
+220825-02:07:48,492 nipype.interface INFO:
+	 stdout 2022-08-25T02:07:48.492344:Completed
+220825-02:07:48,806 nipype.workflow INFO:
+	 [Node] Finished "_level1estimate2".
+220825-02:07:48,817 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1estimate".
+220825-02:07:48,817 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_predictors" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/get_predictors".
+220825-02:07:48,855 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/get_predictors/mapflow/_get_predictors0".
+220825-02:07:48,868 nipype.workflow INFO:
+	 [Node] Running "_get_predictors0" ("nipype.interfaces.utility.wrappers.Function")
+220825-02:07:49,130 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors0".
+220825-02:07:49,132 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/get_predictors/mapflow/_get_predictors1".
+220825-02:07:49,146 nipype.workflow INFO:
+	 [Node] Running "_get_predictors1" ("nipype.interfaces.utility.wrappers.Function")
+220825-02:07:49,245 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors1".
+220825-02:07:49,247 nipype.workflow INFO:
+	 [Node] Setting-up "_get_predictors2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/get_predictors/mapflow/_get_predictors2".
+220825-02:07:49,260 nipype.workflow INFO:
+	 [Node] Running "_get_predictors2" ("nipype.interfaces.utility.wrappers.Function")
+220825-02:07:49,355 nipype.workflow INFO:
+	 [Node] Finished "_get_predictors2".
+220825-02:07:49,493 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_predictors".
+220825-02:07:49,493 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.get_subjinfo" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/get_subjinfo".
+220825-02:07:50,122 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/get_subjinfo/mapflow/_get_subjinfo0".
+220825-02:07:50,257 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo0" ("nipype.interfaces.utility.wrappers.Function")
+220825-02:07:50,362 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo0".
+220825-02:07:50,365 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/get_subjinfo/mapflow/_get_subjinfo1".
+220825-02:07:50,496 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo1" ("nipype.interfaces.utility.wrappers.Function")
+220825-02:07:50,597 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo1".
+220825-02:07:50,600 nipype.workflow INFO:
+	 [Node] Setting-up "_get_subjinfo2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/get_subjinfo/mapflow/_get_subjinfo2".
+220825-02:07:50,740 nipype.workflow INFO:
+	 [Node] Running "_get_subjinfo2" ("nipype.interfaces.utility.wrappers.Function")
+220825-02:07:50,842 nipype.workflow INFO:
+	 [Node] Finished "_get_subjinfo2".
+220825-02:07:51,130 nipype.workflow INFO:
+	 [Node] Finished "workflow.get_subjinfo".
+220825-02:07:51,131 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelspec" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelspec".
+220825-02:07:51,301 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelspec/mapflow/_modelspec0".
+220825-02:07:51,345 nipype.workflow INFO:
+	 [Node] Running "_modelspec0" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-02:07:51,464 nipype.workflow INFO:
+	 [Node] Finished "_modelspec0".
+220825-02:07:51,474 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelspec/mapflow/_modelspec1".
+220825-02:07:51,517 nipype.workflow INFO:
+	 [Node] Running "_modelspec1" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-02:07:51,649 nipype.workflow INFO:
+	 [Node] Finished "_modelspec1".
+220825-02:07:51,660 nipype.workflow INFO:
+	 [Node] Setting-up "_modelspec2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelspec/mapflow/_modelspec2".
+220825-02:07:51,704 nipype.workflow INFO:
+	 [Node] Running "_modelspec2" ("nipype.algorithms.modelgen.SpecifyModel")
+220825-02:07:51,821 nipype.workflow INFO:
+	 [Node] Finished "_modelspec2".
+220825-02:07:52,32 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelspec".
+220825-02:07:52,33 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1design" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1design".
+220825-02:07:52,720 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1design/mapflow/_level1design0".
+220825-02:07:52,897 nipype.workflow INFO:
+	 [Node] Running "_level1design0" ("nipype.interfaces.fsl.model.Level1Design")
+220825-02:07:53,35 nipype.workflow INFO:
+	 [Node] Finished "_level1design0".
+220825-02:07:53,38 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1design/mapflow/_level1design1".
+220825-02:07:53,214 nipype.workflow INFO:
+	 [Node] Running "_level1design1" ("nipype.interfaces.fsl.model.Level1Design")
+220825-02:07:53,338 nipype.workflow INFO:
+	 [Node] Finished "_level1design1".
+220825-02:07:53,341 nipype.workflow INFO:
+	 [Node] Setting-up "_level1design2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1design/mapflow/_level1design2".
+220825-02:07:53,517 nipype.workflow INFO:
+	 [Node] Running "_level1design2" ("nipype.interfaces.fsl.model.Level1Design")
+220825-02:07:53,626 nipype.workflow INFO:
+	 [Node] Finished "_level1design2".
+220825-02:07:53,821 nipype.workflow INFO:
+	 [Node] Finished "workflow.level1design".
+220825-02:07:53,821 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.modelgen" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelgen".
+220825-02:07:53,850 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelgen/mapflow/_modelgen0".
+220825-02:07:53,878 nipype.workflow INFO:
+	 [Node] Running "_modelgen0" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-02:07:54,721 nipype.workflow INFO:
+	 [Node] Finished "_modelgen0".
+220825-02:07:54,724 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelgen/mapflow/_modelgen1".
+220825-02:07:54,749 nipype.workflow INFO:
+	 [Node] Running "_modelgen1" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-02:07:55,305 nipype.workflow INFO:
+	 [Node] Finished "_modelgen1".
+220825-02:07:55,309 nipype.workflow INFO:
+	 [Node] Setting-up "_modelgen2" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelgen/mapflow/_modelgen2".
+220825-02:07:55,336 nipype.workflow INFO:
+	 [Node] Running "_modelgen2" ("nipype.interfaces.fsl.model.FEATModel"), a CommandLine Interface with command:
+feat_model run0 
+220825-02:07:55,920 nipype.workflow INFO:
+	 [Node] Finished "_modelgen2".
+220825-02:07:55,927 nipype.workflow INFO:
+	 [Node] Finished "workflow.modelgen".
+220825-02:07:55,928 nipype.workflow INFO:
+	 [Node] Setting-up "workflow.level1estimate" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate".
+220825-02:07:55,947 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate0" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate0".
+220825-02:07:55,959 nipype.workflow INFO:
+	 [Node] Running "_level1estimate0" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelgen/mapflow/_modelgen0/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth0/sub-034_task-game_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelgen/mapflow/_modelgen0/run0.mat --thr=1000.000000
+220825-02:07:56,13 nipype.interface INFO:
+	 stdout 2022-08-25T02:07:56.013415:Log directory is: results
+220825-02:08:08,523 nipype.interface INFO:
+	 stdout 2022-08-25T02:08:08.523624:paradigm.getDesignMatrix().Nrows()=185
+220825-02:08:08,524 nipype.interface INFO:
+	 stdout 2022-08-25T02:08:08.523624:paradigm.getDesignMatrix().Ncols()=13
+220825-02:08:08,524 nipype.interface INFO:
+	 stdout 2022-08-25T02:08:08.523624:sizeTS=185
+220825-02:08:08,524 nipype.interface INFO:
+	 stdout 2022-08-25T02:08:08.523624:numTS=229354
+220825-02:08:08,742 nipype.interface INFO:
+	 stdout 2022-08-25T02:08:08.742807:Calculating residuals...
+220825-02:09:07,359 nipype.interface INFO:
+	 stdout 2022-08-25T02:09:07.359183:Completed
+220825-02:09:07,359 nipype.interface INFO:
+	 stdout 2022-08-25T02:09:07.359183:Estimating residual autocorrelation...
+220825-02:09:23,856 nipype.interface INFO:
+	 stdout 2022-08-25T02:09:23.856744:Calculating raw AutoCorrs... Completed
+220825-02:09:23,883 nipype.interface INFO:
+	 stdout 2022-08-25T02:09:23.883199:mode = 7135.2
+220825-02:09:23,887 nipype.interface INFO:
+	 stdout 2022-08-25T02:09:23.887939:sig = 1072
+220825-02:09:23,888 nipype.interface INFO:
+	 stdout 2022-08-25T02:09:23.888100:Spatially smoothing auto corr estimates
+220825-02:11:21,418 nipype.interface INFO:
+	 stdout 2022-08-25T02:11:21.418741:............
+220825-02:11:21,419 nipype.interface INFO:
+	 stdout 2022-08-25T02:11:21.418741:Completed
+220825-02:11:21,419 nipype.interface INFO:
+	 stdout 2022-08-25T02:11:21.419356:Tukey M = 13
+220825-02:11:21,508 nipype.interface INFO:
+	 stdout 2022-08-25T02:11:21.508662:Tukey estimates... Completed
+220825-02:11:21,508 nipype.interface INFO:
+	 stdout 2022-08-25T02:11:21.508662:Completed
+220825-02:11:21,509 nipype.interface INFO:
+	 stdout 2022-08-25T02:11:21.508662:Prewhitening and Computing PEs...
+220825-02:11:21,509 nipype.interface INFO:
+	 stdout 2022-08-25T02:11:21.508662:Percentage done:
+slurmstepd-babbage: error: *** JOB 31156 ON babbage CANCELLED AT 2022-08-24T19:12:57 ***
+220825-02:15:37,222 nipype.interface INFO:
+	 stdout 2022-08-25T02:15:37.222497:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-02:15:37,222 nipype.interface INFO:
+	 stdout 2022-08-25T02:15:37.222497:Saving results... 
+220825-02:16:00,440 nipype.interface INFO:
+	 stdout 2022-08-25T02:16:00.440295:Completed
+220825-02:16:00,643 nipype.workflow WARNING:
+	 Storing result file without outputs
+220825-02:16:00,645 nipype.workflow WARNING:
+	 [Node] Error on "_level1estimate0" (/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate0)
+220825-02:16:00,646 nipype.workflow WARNING:
+	 Interface finished unexpectedly and the corresponding unfinished hashfile /home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate0/_0x6ecada18740afaf1e6ada7e61e28dcfc_unfinished.json does not exist. Another nipype instance may be running against the same work directory. Please ensure no other concurrent workflows are racing
+220825-02:16:00,652 nipype.workflow INFO:
+	 [Node] Setting-up "_level1estimate1" in "/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1".
+220825-02:16:00,661 nipype.workflow INFO:
+	 [Node] Running "_level1estimate1" ("nipype.interfaces.fsl.model.FILMGLS"), a CommandLine Interface with command:
+film_gls --ms=5 --rn=results --sa --con=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelgen/mapflow/_modelgen1/run0.con --in=/home/pw/projects/thesis/out/workflow/_subject_id_034/smooth/mapflow/_smooth1/sub-034_task-game_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold_masked_smooth.nii.gz --pd=/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/modelgen/mapflow/_modelgen1/run0.mat --thr=1000.000000
+220825-02:16:00,706 nipype.interface INFO:
+	 stdout 2022-08-25T02:16:00.706623:Log directory is: results
+220825-02:16:11,799 nipype.interface INFO:
+	 stdout 2022-08-25T02:16:11.799356:paradigm.getDesignMatrix().Nrows()=185
+220825-02:16:11,799 nipype.interface INFO:
+	 stdout 2022-08-25T02:16:11.799356:paradigm.getDesignMatrix().Ncols()=13
+220825-02:16:11,799 nipype.interface INFO:
+	 stdout 2022-08-25T02:16:11.799356:sizeTS=185
+220825-02:16:11,799 nipype.interface INFO:
+	 stdout 2022-08-25T02:16:11.799356:numTS=229636
+220825-02:16:12,15 nipype.interface INFO:
+	 stdout 2022-08-25T02:16:12.015553:Calculating residuals...
+220825-02:17:09,925 nipype.interface INFO:
+	 stdout 2022-08-25T02:17:09.925405:Completed
+220825-02:17:09,925 nipype.interface INFO:
+	 stdout 2022-08-25T02:17:09.925405:Estimating residual autocorrelation...
+220825-02:17:26,502 nipype.interface INFO:
+	 stdout 2022-08-25T02:17:26.502585:Calculating raw AutoCorrs... Completed
+220825-02:17:26,527 nipype.interface INFO:
+	 stdout 2022-08-25T02:17:26.527910:mode = 7263.53
+220825-02:17:26,532 nipype.interface INFO:
+	 stdout 2022-08-25T02:17:26.532477:sig = 998
+220825-02:17:26,532 nipype.interface INFO:
+	 stdout 2022-08-25T02:17:26.532629:Spatially smoothing auto corr estimates
+220825-02:19:26,638 nipype.interface INFO:
+	 stdout 2022-08-25T02:19:26.638147:............
+220825-02:19:26,638 nipype.interface INFO:
+	 stdout 2022-08-25T02:19:26.638147:Completed
+220825-02:19:26,638 nipype.interface INFO:
+	 stdout 2022-08-25T02:19:26.638875:Tukey M = 13
+220825-02:19:26,730 nipype.interface INFO:
+	 stdout 2022-08-25T02:19:26.729917:Tukey estimates... Completed
+220825-02:19:26,730 nipype.interface INFO:
+	 stdout 2022-08-25T02:19:26.729917:Completed
+220825-02:19:26,730 nipype.interface INFO:
+	 stdout 2022-08-25T02:19:26.729917:Prewhitening and Computing PEs...
+220825-02:19:26,730 nipype.interface INFO:
+	 stdout 2022-08-25T02:19:26.729917:Percentage done:
+220825-02:23:50,661 nipype.interface INFO:
+	 stdout 2022-08-25T02:23:50.661616:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+220825-02:23:50,661 nipype.interface INFO:
+	 stdout 2022-08-25T02:23:50.661616:Saving results... 
+220825-02:24:15,225 nipype.interface INFO:
+	 stdout 2022-08-25T02:24:15.225832:Completed
+220825-02:24:15,386 nipype.workflow WARNING:
+	 Storing result file without outputs
+220825-02:24:15,387 nipype.workflow WARNING:
+	 [Node] Error on "_level1estimate1" (/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1)
+220825-02:24:15,387 nipype.workflow WARNING:
+	 Interface finished unexpectedly and the corresponding unfinished hashfile /home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1/_0x66ad74934e6d83332717499e00c6ce38_unfinished.json does not exist. Another nipype instance may be running against the same work directory. Please ensure no other concurrent workflows are racing
+220825-02:24:15,388 nipype.workflow WARNING:
+	 Storing result file without outputs
+220825-02:24:15,390 nipype.workflow WARNING:
+	 [Node] Error on "workflow.level1estimate" (/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate)
+220825-02:24:15,416 nipype.workflow ERROR:
+	 Node level1estimate.a6.b6 failed to run on host bd35c80b2b0c.
+220825-02:24:15,416 nipype.workflow ERROR:
+	 Saving crash info to /crash-20220825-022415-pw-level1estimate.a6.b6-2851a906-b7aa-41b0-b60b-f1e7533c883e.txt
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 530, in aggregate_outputs
+    setattr(outputs, key, val)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/traits_extension.py", line 330, in validate
+    value = super(File, self).validate(objekt, name, value, return_pathlike=True)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/traits_extension.py", line 135, in validate
+    self.error(objekt, name, str(value))
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/traits/base_trait_handler.py", line 75, in error
+    object, name, self.full_info(object, name, value), value
+traits.trait_errors.TraitError: The 'residual4d' trait of a FILMGLSOutputSpec507 instance must be a pathlike object or string representing an existing file, but a value of '/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1/results/res4d.nii.gz' <class 'str'> was specified.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 741, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 430, in run
+    outputs = self.aggregate_outputs(runtime)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 537, in aggregate_outputs
+    raise FileNotFoundError(msg)
+FileNotFoundError: No such file or directory '/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1/results/res4d.nii.gz' for output 'residual4d' of a FILMGLS interface
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 94, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_interface
+    return self._run_command(execute)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 750, in _run_command
+    rebase=str2bool(self.config["execution"]["use_relative_paths"]),
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 235, in save_resultfile
+    savepkl(resultsfile, result)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 719, in savepkl
+    with pkl_open(tmpfile, "wb") as pkl_file:
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/gzip.py", line 168, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1/result__level1estimate1.pklz.tmp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 45, in run
+    node.run(updatehash=updatehash)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1385, in _run_interface
+    self.config["execution"]["stop_on_first_crash"]
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1249, in _collate_results
+    for i, nresult, err in nodes:
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 99, in nodelist_runner
+    result = node.result
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 217, in result
+    op.join(self.output_dir(), "result_%s.pklz" % self.name)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 291, in load_resultfile
+    raise FileNotFoundError(results_file)
+FileNotFoundError: /home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1/result__level1estimate1.pklz
+
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 530, in aggregate_outputs
+    setattr(outputs, key, val)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/traits_extension.py", line 330, in validate
+    value = super(File, self).validate(objekt, name, value, return_pathlike=True)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/traits_extension.py", line 135, in validate
+    self.error(objekt, name, str(value))
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/traits/base_trait_handler.py", line 75, in error
+    object, name, self.full_info(object, name, value), value
+traits.trait_errors.TraitError: The 'residual4d' trait of a FILMGLSOutputSpec507 instance must be a pathlike object or string representing an existing file, but a value of '/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1/results/res4d.nii.gz' <class 'str'> was specified.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 741, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 430, in run
+    outputs = self.aggregate_outputs(runtime)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 537, in aggregate_outputs
+    raise FileNotFoundError(msg)
+FileNotFoundError: No such file or directory '/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1/results/res4d.nii.gz' for output 'residual4d' of a FILMGLS interface
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 94, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_interface
+    return self._run_command(execute)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 750, in _run_command
+    rebase=str2bool(self.config["execution"]["use_relative_paths"]),
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 235, in save_resultfile
+    savepkl(resultsfile, result)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 719, in savepkl
+    with pkl_open(tmpfile, "wb") as pkl_file:
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/gzip.py", line 168, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1/result__level1estimate1.pklz.tmp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 45, in run
+    node.run(updatehash=updatehash)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1385, in _run_interface
+    self.config["execution"]["stop_on_first_crash"]
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1249, in _collate_results
+    for i, nresult, err in nodes:
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 99, in nodelist_runner
+    result = node.result
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 217, in result
+    op.join(self.output_dir(), "result_%s.pklz" % self.name)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 291, in load_resultfile
+    raise FileNotFoundError(results_file)
+FileNotFoundError: /home/pw/projects/thesis/out/workflow/_subject_id_034/_roi_Cere/level1estimate/mapflow/_level1estimate1/result__level1estimate1.pklz
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pw/projects/thesis/code/nipype_glm/firstlevel22-28.py", line 516, in <module>
+    wf.run() #plugin="MultiProc", plugin_args={"n_procs": 8}
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/engine/workflows.py", line 638, in run
+    runner.run(execgraph, updatehash=updatehash, config=self.config)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 50, in run
+    crashfile = report_crash(node)
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/pipeline/plugins/tools.py", line 72, in report_crash
+    crash2txt(crashfile, dict(node=node, traceback=traceback))
+  File "/opt/miniconda-latest/envs/neuro/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 676, in crash2txt
+    with open(filename, "w") as fp:
+PermissionError: [Errno 13] Permission denied: '/crash-20220825-022415-pw-level1estimate.a6.b6-2851a906-b7aa-41b0-b60b-f1e7533c883e.txt'
