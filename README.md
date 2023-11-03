@@ -1,5 +1,5 @@
 # Project Goals
-The goal of this project is to create a containerized pipeline for psychophysiological interaction analysis in Nipype (a python package for fMRI analysis). This pipeline allows us to examine the connectivity between two different networks in the brain during an activity (such as when a person is in flow). 
+The goal of this project is to create a containerized pipeline for [psychophysiological interaction (PPI)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3375893/) analysis in Nipype (a python package for fMRI analysis). The PPI model is essentially a three-level GLM with a nonlinear interaction coefficient. This pipeline allows us to examine the connectivity between two different networks in the brain during an activity (such as when a person is in flow). 
 
 ## Theoretical Background
 The Synchronization Theory of Flow offers a neurological perspective of a ‘flow state’. It hypothesizes that that flow occurs when specific attention and reward networks synchronize in the brain. At a neurological level, understanding what flow looks like with a dynamic, real-time measure in the brain has implications for a variety of questions, such as testing the length, depth, and stability of flow episodes across various conditions and types of distractors. 
